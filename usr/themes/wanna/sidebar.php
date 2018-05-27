@@ -40,6 +40,7 @@
             <?php while($pages->next()): ?>
                 <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><li class="mdui-ripple"><?php $pages->title(); ?></li></a>
             <?php endwhile; ?>
+            <a href="https://github.com/aurevoirxavier"><li class="mdui-ripple">Github</li></a>
             <a href="<?php $this->options->feedUrl(); ?>"><li class="mdui-ripple">RSS</li></a>
         </ul>
     </div>
