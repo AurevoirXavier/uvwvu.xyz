@@ -69,7 +69,7 @@
             "text": ["点击图片可以放大呢"]
         },
         {
-            "selector": "input[name=q]",
+            "selector": ".searchInput",
             "text": ["找不到想看的内容？搜索看看吧"]
         },
         {
