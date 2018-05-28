@@ -142,9 +142,7 @@ function elseActed(){
 }
 
 function showHitokoto(){
-    $.getJSON('//api.fghrsh.net/hitokoto/rand/?encode=jsc&uid=3335',function(result){
-        var text = '这句一言出处是 <span style="color:#0099cc;">『{source}』</span>，是 <span style="color:#0099cc;">FGHRSH</span> 在 {date} 收藏的！';
-        text = text.render({source: result.source, date: result.date});
+    $.getJSON('https://v1.hitokoto.cn',function(result){
         showMessage(result.hitokoto, 5000);
         window.setTimeout(function() {showMessage(text, 3000);}, 5000);
     });
