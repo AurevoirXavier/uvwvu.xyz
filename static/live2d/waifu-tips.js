@@ -30,13 +30,6 @@ $(document).on('copy', function (){
     showMessage('你都复制了些什么呀，转载要记得加上出处哦', 5000, true);
 });
 
-$('#hitokoto').mouseover(function (){
-    var text = '这句一言出处是 <span style="color:#0099cc;">『{source}』</span>，是 <span style="color:#0099cc;">FGHRSH</span> 在 {date} 收藏的！';
-    var hitokoto = JSON.parse($(this)[0].dataset.raw);
-    text = text.render({source: hitokoto.source, author: hitokoto.author, date: hitokoto.date});
-    showMessage(text, 3000);
-});
-
 $('.waifu-tool .fui-home').click(function (){
     window.location = 'https://uvwvu.xyz/';
     //window.location = window.location.protocol+'//'+window.location.hostname+'/'
@@ -180,7 +173,7 @@ function initModel(waifuPath){
         /* 首次访问加载 指定模型 的 指定材质 */
         
         var modelId = 6;            // 模型 ID
-        var modelTexturesId = 4;    // 材质 ID
+        var modelTexturesId = 16;    // 材质 ID
         
     } loadModel(modelId, modelTexturesId);
 	
@@ -226,7 +219,7 @@ function loadModel(modelId, modelTexturesId){
     localStorage.setItem('modelId', modelId);
     if (modelTexturesId === undefined) modelTexturesId = 0;
     localStorage.setItem('modelTexturesId', modelTexturesId);
-    loadlive2d('live2d', '//api.fghrsh.net/live2d/get/?id='+modelId+'-'+modelTexturesId, console.log('live2d','模型 '+modelId+'-'+modelTexturesId+' 加载完成'));
+    loadlive2d('live2d', '//api.uvwvu.xyz/live2d/get/?id='+modelId+'-'+modelTexturesId, console.log('live2d','模型 '+modelId+'-'+modelTexturesId+' 加载完成'));
 }
 
 function loadRandModel(){
@@ -237,7 +230,7 @@ function loadRandModel(){
     
     $.ajax({
         cache: false,
-        url: '//api.fghrsh.net/live2d/'+modelTexturesRandMode+'_textures/?id='+modelId+'-'+modelTexturesId,
+        url: '//api.uvwvu.xyz/live2d/'+modelTexturesRandMode+'_textures/?id='+modelId+'-'+modelTexturesId,
         dataType: "json",
         success: function (result){
             loadModel(modelId, result.textures['id']);
@@ -252,7 +245,7 @@ function loadOtherModel(){
     
     $.ajax({
         cache: false,
-        url: '//api.fghrsh.net/live2d/'+modelTexturesRandMode+'/?id='+modelId,
+        url: '//api.uvwvu.xyz/live2d/'+modelTexturesRandMode+'/?id='+modelId,
         dataType: "json",
         success: function (result){
             loadModel(result.model['id']);
