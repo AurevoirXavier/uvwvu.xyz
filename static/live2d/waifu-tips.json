@@ -73,7 +73,11 @@
             "text": ["找不到想看的内容？搜索看看吧"]
         },
         {
-            "selector": ".paging",
+            "selector": ".prev",
+            "text": ["去上一页看看吧"]
+        },
+        {
+            "selector": ".next",
             "text": ["去下一页看看吧"]
         },
         {
