@@ -3,7 +3,7 @@
 <footer class="mdui-container-fluid shadow-1">
     <div class="mdui-row">
         <div class="mdui-col-md-4">
-            <p>Powered by <a href="http://uvwvu.com">Aurevoir Xavier</a></p>
+            <p>Powered by <a href="http://uvwvu.com">AurevoirXavier</a></p>
             <p>Theme: <a href="http://icry.info/">Wanna</a></p>
         </div>
         <div class="mdui-col-md-4">
