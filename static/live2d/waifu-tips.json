@@ -5,7 +5,7 @@
             "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"]
         },
         {
-            "selector": "#header ul:first-child",
+            "selector": "#header ul li:first-child",
             "text": ["点击可以前往首页哦"]
         },
         {
