@@ -5,8 +5,8 @@
             "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"]
         },
         {
-            "selector": ".logo",
-            "text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦"]
+            "selector": "#header ul:first-child",
+            "text": ["点击可以前往首页哦"]
         },
         {
             "selector": ".social-share",
@@ -22,7 +22,7 @@
         },
         {
             "selector": ".creativecommons",
-            "text": ["转载前要先注意下文章的 版权协议 呢"]
+            "text": ["转载前要先注意下文章的版权协议呢"]
         },
         {
             "selector": ".comm",
