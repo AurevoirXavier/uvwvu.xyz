@@ -38,7 +38,7 @@
             reload();
         })
     </script>
-    <script src="//s.uvwvu.xyz/live2d/autoload.js" type="text/javascript"></script>
+    <!-- <script src="//s.uvwvu.xyz/live2d/autoload.js" type="text/javascript"></script> -->
 </footer><!-- end #footer -->
 
 <?php $this->footer(); ?>
