@@ -326,13 +326,10 @@ header {
     align-items: center;
     justify-content: center;
     height: 30px;
-}   
-.current{
-    color: red;
 }
-/* .page-navigator > .current > a {
+.page-navigator > .current > a {
     color: red !important;
-} */
+}
 .page-navigator > li {
     display: inline-block;
     height: 100%;
