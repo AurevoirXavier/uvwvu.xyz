@@ -328,7 +328,7 @@ header {
     height: 30px;
 }
 .page-navigator > .current > a {
-    color: red !important;
+    color: red;
 }
 .page-navigator > li {
     display: inline-block;
