@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/main.css'); ?>" />
     <link rel="icon" href="<?php echo $this->options->icon ?>">
     <link href="https://cdn.bootcss.com/mdui/0.4.1/css/mdui.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="h//s.uvwvu.xyz/live2d/waifu.css"/>
+    <link rel="stylesheet" type="text/css" href="//s.uvwvu.xyz/live2d/waifu.css"/>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
     <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
