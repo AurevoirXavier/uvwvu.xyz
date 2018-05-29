@@ -53,6 +53,10 @@
             reload();
         })
     </script>
+
+    <script src="//s.uvwvu.xyz/live2d/waifu-tips.js"></script>
+    <script src="//s.uvwvu.xyz/live2d/live2d.js"></script>
+    <script type="text/javascript">initModel("//s.uvwvu.xyz/live2d/")</script>
 </footer><!-- end #footer -->
 
 <?php $this->footer(); ?>
