@@ -55,6 +55,8 @@
     </div>
 </div>
 
+<script src="//s.uvwvu.xyz/live2d/autoload.js" type="text/javascript"></script>
+
 <?php $this->footer(); ?>
         </div>
 <?php $this->need('sidebar.php'); ?>
