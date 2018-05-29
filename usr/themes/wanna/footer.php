@@ -45,7 +45,7 @@
         </div>
 <?php $this->need('sidebar.php'); ?>
     
-<div class="waifu">
+<!-- <div class="waifu">
     <div class="waifu-tips"></div>
     <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
     <div class="waifu-tool">
@@ -57,7 +57,7 @@
         <span class="fui-info-circle"></span>
         <span class="fui-cross"></span>
     </div>
-</div>
+</div> -->
 
 <script src="//s.uvwvu.xyz/live2d/autoload.js" type="text/javascript"></script>
 
