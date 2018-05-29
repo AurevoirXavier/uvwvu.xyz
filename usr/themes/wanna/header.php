@@ -29,7 +29,7 @@
         <?php endwhile; ?>
         <li class="mobie-head-search justCenter">
                 <form class="m-s-input" action="" method="post">
-                    <input type="text" name="s" placeholder="输入搜索关键字" />
+                    <input type="text" name="s" placeholder="Search..." />
                     <button class="justCenter btnclearDcss">
                         <i class="mdui-icon material-icons" style="font-size: 22px;color: gray;">search</i>
                     </button>
