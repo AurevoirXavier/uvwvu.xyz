@@ -41,6 +41,10 @@
     </script>
 </footer><!-- end #footer -->
 
+<?php $this->footer(); ?>
+        </div>
+<?php $this->need('sidebar.php'); ?>
+    
 <div class="waifu">
     <div class="waifu-tips"></div>
     <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
@@ -57,8 +61,5 @@
 
 <script src="//s.uvwvu.xyz/live2d/autoload.js" type="text/javascript"></script>
 
-<?php $this->footer(); ?>
-        </div>
-<?php $this->need('sidebar.php'); ?>
     </body>
 </html>
