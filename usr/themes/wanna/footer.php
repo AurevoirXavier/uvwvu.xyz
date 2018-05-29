@@ -13,6 +13,21 @@
             </p>
         </div>
     </div>
+    
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <!-- <span class="fui-info-circle"></span> -->
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+
     <script>
         fetch('https://v1.hitokoto.cn')
             .then(function (res){
@@ -39,8 +54,6 @@
         })
     </script>
 </footer><!-- end #footer -->
-
-<script src="//s.uvwvu.xyz/live2d/autoload.js" type="text/javascript"></script>
 
 <?php $this->footer(); ?>
         </div>
