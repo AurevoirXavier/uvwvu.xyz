@@ -50,7 +50,7 @@
         <span class="fui-eye"></span>
         <span class="fui-user"></span>
         <span class="fui-photo"></span>
-        <!-- <span class="fui-info-circle"></span> -->
+        <span class="fui-info-circle"></span>
         <span class="fui-cross"></span>
     </div>
 </div>
