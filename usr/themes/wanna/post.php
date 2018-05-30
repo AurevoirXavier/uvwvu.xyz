@@ -13,15 +13,15 @@
         <h3><?php $this->title() ?></h3>
         <div class="taptap">
             <div>
-                <span><i class="mdui-icon material-icons">check</i>评论：<a><?php $this->commentsNum('%d  条'); ?></a></span>
-                <span><i class="mdui-icon material-icons">remove_red_eye</i>浏览量：<a><?php get_post_view($this) ?></a></span>
+                <span><i class="mdui-icon material-icons">check</i>Comment: <a><?php $this->commentsNum('%d'); ?></a></span>
+                <span><i class="mdui-icon material-icons">remove_red_eye</i>Views: <a><?php get_post_view($this) ?></a></span>
                 <span><i class="mdui-icon material-icons">change_history</i>Tags：<?php $this->category(','); ?></span>
             </div>
             <div class="pageDataRight">
                 <span>
-                    作者 : <a><?php $this->author() ?></a></span>
+                    Author: <a><?php $this->author() ?></a></span>
                 <span>
-                    <i class="mdui-icon material-icons">date_range</i>日期 : <?php $this->date('Y / F j'); ?></span>
+                    <i class="mdui-icon material-icons">date_range</i>Date: <?php $this->date('Y / F j'); ?></span>
             </div>
 
         </div>
@@ -33,7 +33,7 @@
     </div>
     <div class="pay justCenter">
         <button class="mdui-ripple mdui-btn shadow-1 payBtn" mdui-dialog="{target: '#payImg'}">
-            <i class="mdui-icon material-icons" style="font-size: 18px">favorite</i> 赞赏
+            <i class="mdui-icon material-icons" style="font-size: 18px">favorite</i> Favorite
     </div>
     <div class="mdui-dialog justCenter" id="payImg">
         <img src='<?php echo $this->options->pay ?>' width="100%" />
