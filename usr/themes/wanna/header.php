@@ -24,14 +24,12 @@
     <ul class="header-tab-1">
         <li class="mdui-ripple"><a href="<?php $this->options->siteUrl(); ?>">Home</a></li>
         <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
-        <?php while($pages->next()): ?>
-            <li class="mdui-ripple typ-item"><a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
-        <?php endwhile; ?>
+
         <li class="mobie-head-search justCenter">
                 <form class="m-s-input" action="" method="post">
                     <input type="text" name="s" placeholder="Search..." />
                     <button class="justCenter btnclearDcss">
-                        <i class="mdui-icon material-icons" style="font-size: 22px;color: gray;">search</i>
+                        <i class="mdui-icon material-icons" style="font-size: 22px;color: gray;">Search</i>
                     </button>
                 </form>
         </li>
@@ -40,7 +38,7 @@
         <?php if($this->user->hasLogin()): ?>
                     <li><a href="<?php $this->options->adminUrl(); ?>">Welcome, <?php $this->user->screenName(); ?></a></li>
         <?php else: ?>
-            <li class="loginBtn"><a href="<?php $this->options->adminUrl(); ?>">Login<i class="mdui-icon material-icons">expand_more</i></a></li>
+            <li class="loginBtn"><a href="<?php $this->options->adminUrl(); ?>">Sign in<i class="mdui-icon material-icons">expand_more</i></a></li>
         <?php endif; ?>
                     <a href="<?php $this->options->siteUrl(); ?>">
                         <li class="mobie-head"><?php $this->options->title() ?></li>
