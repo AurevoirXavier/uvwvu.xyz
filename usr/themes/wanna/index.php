@@ -39,9 +39,9 @@ $this->need('header.php');
                                 <h4><?php $this->title() ?></h4>
                             </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
-                                作者：<a><?php $this->author(); ?></a>&nbsp
-                                时间：<a><?php $this->date('Y / F j'); ?></a>&nbsp
-                                标签：<a><?php $this->category(','); ?></a>
+                                Author: <a><?php $this->author(); ?></a>&nbsp
+                                Date: <a><?php $this->date('Y / F j'); ?></a>&nbsp
+                                Tag: <a><?php $this->category(','); ?></a>
                             </div>
                             <p style="font-size: 0.92em"><?php $this->excerpt(40,'...'); ?></p>
                         </div>
@@ -138,7 +138,7 @@ $this->need('header.php');
                                                 <span><?php $recent->date('Y / F j'); ?></span>
                                                     <span class="mdui-float-right nextNewPageData">
                                             <i class="mdui-icon material-icons">check</i>
-                                            评论：<a><?php $recent->commentsNum('%d'); ?></a>
+                                            Comment: <a><?php $recent->commentsNum('%d'); ?></a>
                                                          </span>
                                                 </div>
 
