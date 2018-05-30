@@ -19,9 +19,9 @@
             </div>
             <div class="pageDataRight">
                 <span>
-                    Author: <a><?php $this->author() ?></a></span>
+                    Author : <a><?php $this->author() ?></a></span>
                 <span>
-                    <i class="mdui-icon material-icons">date_range</i>Date: <?php $this->date('Y / F j'); ?></span>
+                    <i class="mdui-icon material-icons">date_range</i>Date : <?php $this->date('Y / F j'); ?></span>
             </div>
 
         </div>
@@ -33,7 +33,7 @@
     </div>
     <div class="pay justCenter">
         <button class="mdui-ripple mdui-btn shadow-1 payBtn" mdui-dialog="{target: '#payImg'}">
-            <i class="mdui-icon material-icons" style="font-size: 18px">favorite</i> Favorite
+            <i class="mdui-icon material-icons" style="font-size: 18px">favorite</i> FAVORITE
     </div>
     <div class="mdui-dialog justCenter" id="payImg">
         <img src='<?php echo $this->options->pay ?>' width="100%" />
