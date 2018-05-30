@@ -34,14 +34,14 @@ if(is_array($_GET)&&count($_GET)>0)
         <div class="replyId" id="replyId">Reply to <span class="reply-name"></span>&nbsp<span class="replyCon"></span></div>
         <form method="post" action="<?php $this->commentUrl() ?>" style="width: 100%" role="form" id="comment_form">
             <?php if($this->user->hasLogin()): ?>
-                <p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo; </a></p>
+                <p><?php _e('Account: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('Sign out'); ?> &raquo; </a></p>
             <?php else: ?>
                 <div class="userIC">
                     <div class="mdui-col-xs-12 mdui-col-md-3 getData-input" id="userName">
-                        <input type="text" placeholder="昵称" name="author" value="<?php $this->remember('author'); ?>" required />
+                        <input type="text" placeholder="Name" name="author" value="<?php $this->remember('author'); ?>" required />
                     </div>
                     <div class="mdui-col-xs-12 mdui-col-md-3 getData-input" id="mail">
-                        <input type="email" placeholder="邮箱" name="mail" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
+                        <input type="email" placeholder="E-mail" name="mail" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
                     </div>
                     <div class="mdui-col-xs-12 mdui-col-md-4 getData-input" id="urls">
                         <input type="text" name="url" id="urls" placeholder="http://" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?>/>
