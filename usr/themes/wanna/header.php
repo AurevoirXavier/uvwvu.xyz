@@ -23,7 +23,6 @@
 <header id="header">
     <ul class="header-tab-1">
         <li class="mdui-ripple"><a href="<?php $this->options->siteUrl(); ?>">Home</a></li>
-        <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
 
         <li class="mobie-head-search justCenter">
                 <form class="m-s-input" action="" method="post">
