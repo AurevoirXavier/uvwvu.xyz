@@ -5,8 +5,12 @@
             "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"]
         },
         {
-            "selector": "#header ul li:first-child",
+            "selector": "a[href^='https://uvwvu.xyz/']",
             "text": ["点击可以前往首页哦"]
+        },
+        {
+            "selector": "a[href^='https://uvwvu.xyz/admin/']",
+            "text": ["点击可以前往控制台哦"]
         },
         {
             "selector": ".social-share",
