@@ -5,7 +5,7 @@
             'category'  =>  _t('%s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),
-            'author'    =>  _t('%s 发布的文章')
+            'author'    =>  _t('%s\'s publish')
         ), '', ''); ?></h3>
     <?php if ($this->have()): ?>
         <?php while($this->next()): ?>
@@ -14,11 +14,11 @@
                     <div class="colorHi"></div>
                     <h5><?php $this->title() ?></h5>
                     <p>
-                        <?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
-                        &nbsp<?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+                        <?php _e('Author: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
+                        &nbsp<?php _e('Date: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
                     </p>
                     <p>
-                        <a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a>
+                        <a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('Comment', '1 条评论', '%d 条评论'); ?></a>
                     </p>
                     <div class="mdui-divider" style="margin-bottom: 10px"></div>
                     <p>
