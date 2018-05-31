@@ -27,7 +27,6 @@ $this->need('header.php');
                                     <div class="cardImage-img" style="background-image: url('<?php showThumbnail($this, $pics); ?>')"></div>
                                 <?php endif; ?>
                             <?php endif; ?>
-                            <div><?php var_dump($pics); ?></div>
 
                             <div class="readMore">
                                 <div><i class="mdui-icon material-icons">keyboard_arrow_left</i></div>
