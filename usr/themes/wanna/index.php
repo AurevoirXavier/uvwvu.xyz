@@ -26,6 +26,7 @@ $this->need('header.php');
                                 <?php else: ?>
                                     <div class="cardImage-img" style="background-image: url('<?php showThumbnail($this, $pics); ?>')"></div>
                                 <?php endif; ?>
+                                <div><?php var_dump($pics); ?></div>
                             <?php endif; ?>
 
                             <div class="readMore">
