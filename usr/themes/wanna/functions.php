@@ -53,10 +53,10 @@ function showThumbnail($widget, &$pics=array())
         $n=5;
     }// 异常处理，干掉自动判断图片数量的功能，切换至手动
     $rand = rand(1,$n);
-    // while($in_array($rand, $pics)) {
-    //     $rand = rand(1,$n);
-    // }
-    // array_push($pics, $rand);
+    while(in_array($rand, $pics)) {
+        $rand = rand(1,$n);
+    }
+    array_push($pics, $rand);
     // ax: deal with repeat
 
     $random = $widget->widget('Widget_Options')->themeUrl . '/img/random/' . $rand . '.jpg'; // 随机缩略图路径
