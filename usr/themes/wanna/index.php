@@ -14,7 +14,7 @@ $this->need('header.php');
     <div class="mdui-container-fluid blogBody">
         <div class="blogBody-pos">
             <div class="left-page-list mdui-col-md-7" id="qwq">
-                <?php $pics = 0; ?>
+                <?php $pics = array(); ?>
                 <?php while($this->next()): ?>
                 <div class="pageTag shadow-5">
                     <div class="cardImage">
