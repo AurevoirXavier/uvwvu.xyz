@@ -21,7 +21,7 @@ $this->need('header.php');
                             <?php if($this->options->slimg && 'guanbi'==$this->options->slimg): ?>
                             <?php else: ?>
                                 <!-- TODO: refactor -->
-                                <?php $pics = array(); ?>
+                                <?php $pics = 0; ?>
                                 <?php if($this->options->slimg && 'showoff'==$this->options->slimg): ?><a href="<?php $this->permalink() ?>" ><?php showThumbnail($this); ?></a>
                                 <?php else: ?>
                                     <div class="cardImage-img" style="background-image: url('<?php showThumbnail($this, $pics); ?>')"></div>
