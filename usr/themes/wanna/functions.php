@@ -57,7 +57,7 @@ function showThumbnail($widget, &$pics)
         $rand = rand(1,$n);
     }
     array_push($pics, $rand);
-    echo '11223344';
+    echo '220099';
     var_dump($pics);
     // ax: deal with repeat
 
