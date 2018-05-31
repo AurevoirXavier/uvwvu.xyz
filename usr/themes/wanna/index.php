@@ -15,12 +15,14 @@ $this->need('header.php');
         <div class="blogBody-pos">
             <div class="left-page-list mdui-col-md-7" id="qwq">
                 <?php while($this->next()): ?>
+                $pics = array();
                 <div class="pageTag shadow-5">
                     <div class="cardImage">
                         <a href="<?php $this->permalink() ?>">
                             <?php if($this->options->slimg && 'guanbi'==$this->options->slimg): ?>
                             <?php else: ?>
-                                <?php if($this->options->slimg && 'showoff'==$this->options->slimg): ?><a href="<?php $this->permalink() ?>" ><?php showThumbnail($this); ?></a>
+                                <!-- TODO: refactor -->
+                                <?php if($this->options->slimg && 'showoff'==$this->options->slimg): ?><a href="<?php $this->permalink() ?>" ><?php showThumbnail($this, $pics); ?></a>
                                 <?php else: ?>
                                     <div class="cardImage-img" style="background-image: url('<?php showThumbnail($this); ?>')"></div>
                                 <?php endif; ?>

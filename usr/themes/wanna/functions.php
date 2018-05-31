@@ -44,7 +44,7 @@ function themeFields($layout) {
     $layout->addItem($thumb);
 }
 /** 输出文章缩略图 */
-function showThumbnail($widget)
+function showThumbnail($widget, &$pics=array())
 {
     // 当文章无图片时的默认缩略图
     $dir = './usr/themes/wanna/img/random/';//随机缩略图目录
@@ -53,7 +53,11 @@ function showThumbnail($widget)
         $n=5;
     }// 异常处理，干掉自动判断图片数量的功能，切换至手动
     $rand = rand(1,$n);
-    // 随机 n张缩略图
+    while($in_array($rand, $pics)) {
+        $rand = rand(1,$n);
+    }
+    array_push($pics, $rand);
+    // ax: deal with repeat
 
     $random = $widget->widget('Widget_Options')->themeUrl . '/img/random/' . $rand . '.jpg'; // 随机缩略图路径
     if(Typecho_Widget::widget('Widget_Options')->slimg && 'Showimg'==Typecho_Widget::widget('Widget_Options')->slimg
@@ -70,7 +74,7 @@ function showThumbnail($widget)
         $ctu = $thumbUrl[1][0].$cai;
     }
 
-//如果是内联式markdown格式的图片
+    //如果是内联式markdown格式的图片
     else   if (preg_match_all($patternMD, $widget->content, $thumbUrl)) {
         $ctu = $thumbUrl[1][0].$cai;
     }

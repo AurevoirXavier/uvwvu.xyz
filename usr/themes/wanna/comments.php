@@ -56,7 +56,7 @@ if(is_array($_GET)&&count($_GET)>0)
             </div>
         </form>
         <?php else: ?>
-            <h3><?php _e('评论已关闭'); ?></h3>
+            <h3><?php _e('Comment has been closed'); ?></h3>
         <?php endif; ?> <!-- 判断是否允许评论 -->
     </div>
     <div class="comments">
