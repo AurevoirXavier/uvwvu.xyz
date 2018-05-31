@@ -44,7 +44,7 @@ function themeFields($layout) {
     $layout->addItem($thumb);
 }
 /** 输出文章缩略图 */
-function showThumbnail($widget, &$pics)
+function showThumbnail($widget, &$pics=array())
 {
     // 当文章无图片时的默认缩略图
     $dir = './usr/themes/wanna/img/random/';//随机缩略图目录
@@ -57,6 +57,8 @@ function showThumbnail($widget, &$pics)
         $rand = rand(1,$n);
     }
     array_push($pics, $rand);
+    echo '112233';
+    var_dump($pics);
     // ax: deal with repeat
 
     $random = $widget->widget('Widget_Options')->themeUrl . '/img/random/' . $rand . '.jpg'; // 随机缩略图路径
