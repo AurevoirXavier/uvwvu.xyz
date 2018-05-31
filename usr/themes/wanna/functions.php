@@ -57,8 +57,6 @@ function showThumbnail($widget, &$pics)
         $rand = rand(1,$n);
     }
     array_push($pics, $rand);
-    echo '220099';
-    var_dump($pics);
     // ax: deal with repeat
 
     $random = $widget->widget('Widget_Options')->themeUrl . '/img/random/' . $rand . '.jpg'; // 随机缩略图路径
