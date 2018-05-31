@@ -14,6 +14,7 @@ $this->need('header.php');
     <div class="mdui-container-fluid blogBody">
         <div class="blogBody-pos">
             <div class="left-page-list mdui-col-md-7" id="qwq">
+                <?php $pics = 0; ?>
                 <?php while($this->next()): ?>
                 <div class="pageTag shadow-5">
                     <div class="cardImage">
@@ -21,7 +22,6 @@ $this->need('header.php');
                             <?php if($this->options->slimg && 'guanbi'==$this->options->slimg): ?>
                             <?php else: ?>
                                 <!-- TODO: refactor -->
-                                <?php $pics = 0; ?>
                                 <?php if($this->options->slimg && 'showoff'==$this->options->slimg): ?><a href="<?php $this->permalink() ?>" ><?php showThumbnail($this); ?></a>
                                 <?php else: ?>
                                     <div class="cardImage-img" style="background-image: url('<?php showThumbnail($this, $pics); ?>')"></div>
