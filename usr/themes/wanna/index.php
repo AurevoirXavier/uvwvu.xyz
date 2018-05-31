@@ -15,7 +15,7 @@ $this->need('header.php');
         <div class="blogBody-pos">
             <div class="left-page-list mdui-col-md-7" id="qwq">
                 <?php while($this->next()): ?>
-                $pics = array();
+                <?php $pics = array(); ?>
                 <div class="pageTag shadow-5">
                     <div class="cardImage">
                         <a href="<?php $this->permalink() ?>">
