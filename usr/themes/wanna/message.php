@@ -13,7 +13,7 @@ $this->need('header.php');
 
     </div>
     <div class="mdui-col-md-12 i-tell-content mdui-typo">
-        <h4>能和我说说话吗#笑</h4>
+        <h4>Say something...</h4>
         <div class="colorBar" style="width: 95%;margin: 0 auto;margin-top: 25px;"></div>
         <div class="tellYou">
             <?php $this->need('comments.php')  ?>

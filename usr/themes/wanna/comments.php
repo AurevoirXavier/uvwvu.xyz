@@ -27,7 +27,7 @@ if(is_array($_GET)&&count($_GET)>0)
     <?php $this->comments()->to($comments); ?>
     <?php if($this->allow('comment')): ?>
     <div class="pageHead" id="<?php $this->respondId(); ?>">
-        <h4><?php $this->commentsNum(_t('No comments yet, be the first to comment!'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h4>
+        <h4><?php $this->commentsNum(_t('No comments yet, be the first to comment!'), _t('Only one comment'), _t('There\'re %d comments')); ?></h4>
         <div class="mdui-divider" style="margin: 15px 0"></div>
     </div>
     <div class="newBB">
@@ -65,7 +65,7 @@ if(is_array($_GET)&&count($_GET)>0)
     <div class="nextPrev">
         <div><i class="mdui-icon material-icons">chevron_left</i><?php $this->theNext('%s','哇 没了'); ?></div>
         <span id='theFlexBor'></span>
-        <div><?php $this->thePrev('%s','哇 没了'); ?>
+        <div><?php $this->thePrev('%s','End'); ?>
             <i class="mdui-icon material-icons">chevron_right</i>
         </div>
     </div>

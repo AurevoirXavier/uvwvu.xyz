@@ -28,9 +28,9 @@
             </article>
         <?php endwhile; ?>
     <?php else: ?>
-        <div>呀，没有找到您想要的东西,一定是姿势不对不如试试搜索</div>
+        <div>Welcome to the Void. Try searching?</div>
         <form method="post" class="findMore-404 getData-input">
-            <input placeholder="搜索内容( Enter确认 )" type="text" name="s" autofocus />
+            <input placeholder="Searching...( Enter )" type="text" name="s" autofocus />
         </form>
     <?php endif; ?>
 
