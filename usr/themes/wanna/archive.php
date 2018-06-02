@@ -2,9 +2,9 @@
 <?php $this->need('header.php'); ?>
 <div class="mdui-container mdui-typo searchData" role="main">
     <h3><?php $this->archiveTitle(array(
-            'category'  =>  _t('%s 下的文章'),
-            'search'    =>  _t('包含关键字 %s 的文章'),
-            'tag'       =>  _t('标签 %s 下的文章'),
+            'category'  =>  _t('Category: %s'),
+            'search'    =>  _t('Keyword: %s'),
+            'tag'       =>  _t('Tag: %s'),
             'author'    =>  _t('%s\'s publish')
         ), '', ''); ?></h3>
     <?php if ($this->have()): ?>
