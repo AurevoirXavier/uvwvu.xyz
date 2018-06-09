@@ -29,7 +29,7 @@
         <div class="Blog-logo">
             <div class="iam-img" id="logo"></div>
             <div class="iam-t mdui-typo">
-                <h5><?php $this->options->title() ?></h5>
+                <h5>AurevoirXavier</h5>
                 <p><?php $this->options->description() ?></p>
             </div>
         </div>
