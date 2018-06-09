@@ -1,8 +1,8 @@
 {
     "mouseover": [
         {
-            "selector": ".pageTag a[href^='https']",
-            "text": ["要看看 <span style=\"color:#0099cc;\">{.cardContent .mudi-typo .pageTitle h4 text}</span> 么？"]
+            "selector": ".pageTitle h4",
+            "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"]
         },
         {
             "selector": "a[href='https://uvwvu.xyz/']",
