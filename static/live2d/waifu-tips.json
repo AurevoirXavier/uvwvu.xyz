@@ -1,7 +1,7 @@
 {
     "mouseover": [
         {
-            "selector": ".content-wrap a[href^='http']",
+            "selector": ".cardImage a[href^='http']",
             "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"]
         },
         {
