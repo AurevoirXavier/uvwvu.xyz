@@ -63,9 +63,12 @@ if(is_array($_GET)&&count($_GET)>0)
         <?php $comments->listComments(); ?>
     </div>
     <div class="nextPrev">
-        <div><i class="mdui-icon material-icons">chevron_left</i><?php $this->theNext('%s','哇 没了'); ?></div>
+        <div>
+            <i class="mdui-icon material-icons">chevron_left</i>
+            <?php $this->theNext('%s','<a>End</a>'); ?></div>
         <span id='theFlexBor'></span>
-        <div><?php $this->thePrev('%s','End'); ?>
+        <div>
+            <?php $this->thePrev('%s','<a>Enddd</a>'); ?>
             <i class="mdui-icon material-icons">chevron_right</i>
         </div>
     </div>
