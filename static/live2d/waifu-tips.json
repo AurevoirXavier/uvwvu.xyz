@@ -2,7 +2,7 @@
     "mouseover": [
         {
             "selector": ".pageTitle h4",
-            "text": ["要看看 <span style=\"color:orange;\">{text}</span> 么？"]
+            "text": ["要看看 <span style=\"color:red;\">{text}</span> 么？"]
         },
         {
             "selector": "a[href='https://uvwvu.xyz/']",
@@ -86,7 +86,7 @@
         },
         {
             "selector": "#htmer_time",
-            "text": ["已经过了这么久了呀，日子过得好快呢", "<span style=\"color:orange;\">2010</span> 是多久来着…<br>1，2，3……有好多好多天呢！"]
+            "text": ["已经过了这么久了呀，日子过得好快呢", "<span style=\"color:red;\">2010</span> 是多久来着…<br>1，2，3……有好多好多天呢！"]
         },
         {
             "selector": ".updatelog",
@@ -158,19 +158,19 @@
     "seasons": [
         {
             "date": "01/01",
-            "text": "<span style=\"color:orange;\">元旦</span>了呢，新的一年又开始了，今年是{year}年~"
+            "text": "<span style=\"color:red;\">元旦</span>了呢，新的一年又开始了，今年是{year}年~"
         },
         {
             "date": "02/14",
-            "text": "又是一年<span style=\"color:orange;\">情人节</span>，{year}年找到对象了嘛~"
+            "text": "又是一年<span style=\"color:red;\">情人节</span>，{year}年找到对象了嘛~"
         },
         {
             "date": "03/08",
-            "text": "今天是<span style=\"color:orange;\">妇女节</span>！"
+            "text": "今天是<span style=\"color:red;\">妇女节</span>！"
         },
         {
             "date": "03/12",
-            "text": "今天是<span style=\"color:orange;\">植树节</span>，要保护环境呀"
+            "text": "今天是<span style=\"color:red;\">植树节</span>，要保护环境呀"
         },
         {
             "date": "04/01",
@@ -178,31 +178,31 @@
         },
         {
             "date": "05/01",
-            "text": "今天是<span style=\"color:orange;\">五一劳动节</span>，计划好假期去哪里了吗~"
+            "text": "今天是<span style=\"color:red;\">五一劳动节</span>，计划好假期去哪里了吗~"
         },
         {
             "date": "06/01",
-            "text": "<span style=\"color:orange;\">儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"
+            "text": "<span style=\"color:red;\">儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"
         },
         {
             "date": "09/03",
-            "text": "<span style=\"color:orange;\">中国人民抗日战争胜利纪念日</span>，铭记历史、缅怀先烈、珍爱和平、开创未来。"
+            "text": "<span style=\"color:red;\">中国人民抗日战争胜利纪念日</span>，铭记历史、缅怀先烈、珍爱和平、开创未来。"
         },
         {
             "date": "09/10",
-            "text": "<span style=\"color:orange;\">教师节</span>，在学校要给老师问声好呀~"
+            "text": "<span style=\"color:red;\">教师节</span>，在学校要给老师问声好呀~"
         },
         {
             "date": "10/01",
-            "text": "<span style=\"color:orange;\">国庆节</span>，新中国已经成立69年了呢"
+            "text": "<span style=\"color:red;\">国庆节</span>，新中国已经成立69年了呢"
         },
         {
             "date": "11/05-11/12",
-            "text": "今年的<span style=\"color:orange;\">双十一</span>是和谁一起过的呢~"
+            "text": "今年的<span style=\"color:red;\">双十一</span>是和谁一起过的呢~"
         },
         {
             "date": "12/20-12/31",
-            "text": "这几天是<span style=\"color:orange;\">圣诞节</span>，主人肯定又去剁手买买买了~"
+            "text": "这几天是<span style=\"color:red;\">圣诞节</span>，主人肯定又去剁手买买买了~"
         }
     ]
 }
