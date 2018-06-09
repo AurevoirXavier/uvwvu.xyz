@@ -2,7 +2,11 @@
     "mouseover": [
         {
             "selector": ".pageTitle h4",
-            "text": ["要看看 <span style=\"color:red;\">{text}</span> 么？"]
+            "text": ["要阅读文章 <span style=\"color:red;\">{text}</span> 么？"]
+        },
+        {
+            "selector": ".tabCard ul li a",
+            "text": ["要查看分类 <span style=\"color:red;\">{text}</span> 么？"]
         },
         {
             "selector": "a[href='https://uvwvu.xyz/']",
