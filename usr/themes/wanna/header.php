@@ -22,8 +22,11 @@
 </div>
 <header id="header">
     <ul class="header-tab-1">
-        <li class="mdui-ripple"><a href="<?php $this->options->siteUrl(); ?>">Home</a></li>
-        <!-- Ax: delete page -->
+        <li class="mdui-ripple">
+            <a href="<?php $this->options->siteUrl(); ?>">
+                <?php $this->options->title() ?>
+            </a>
+        </li>
         <li class="mobie-head-search justCenter">
                 <form class="m-s-input" action="" method="post">
                     <input type="text" name="s" placeholder="Search..." />
@@ -60,14 +63,14 @@
                 animateFor('#controlBtn','controlBtnSB','controlBtnSS');
                 $('#controlBtn').find('i').eq(1).text('close');
                 mh.css({display: 'none'});
-                $('#open-Vmenu').attr('disabled',true);
+                $('#open-Vmenu').css({display : 'none'});
                 switchNow = 1;
             }else {
                 an_Move('header','0','0','400ms');
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
                 $('#controlBtn').find('i').eq(1).text('menu');
                 mh.css({display: 'block'});
-                $('#open-Vmenu').attr('disabled',false);
+                $('#open-Vmenu').css({display : 'inline-block'});
                 switchNow = 0;
             }
         });
