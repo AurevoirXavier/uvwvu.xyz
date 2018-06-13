@@ -4,7 +4,7 @@
         <i class="mdui-icon material-icons">arrow_forward</i>
     </div>
     <ul class="small-vMenu-list" id="smallMenu">
-        <a href="<?php $this->options->siteUrl(); ?>/pagefile.rust">
+        <a href="<?php $this->options->siteUrl(); ?>/pagefile">
             <li class="mdui-ripple">
             <i class="mdui-icon material-icons">book</i>
             </li>
