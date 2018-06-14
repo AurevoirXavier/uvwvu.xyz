@@ -11,7 +11,7 @@
         </a>
         <a href="<?php $this->options->siteUrl(); ?>archive.rust">
             <li class="mdui-ripple">
-            <i class="mdui-icon material-icons">book</i>
+                <i class="fa fa-archive fa-lg"></i>
             </li>
         </a>
         <a href="https://github.com/aurevoirxavier">
