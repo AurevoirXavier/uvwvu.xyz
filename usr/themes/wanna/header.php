@@ -7,6 +7,7 @@
     <title><?php $this->options->title(); ?><?php $this->archiveTitle(); ?></title>
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/main.css'); ?>" />
     <link rel="icon" href="<?php echo $this->options->icon ?>">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/mdui/0.4.1/css/mdui.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//s.uvwvu.xyz/live2d/waifu.css"/>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
