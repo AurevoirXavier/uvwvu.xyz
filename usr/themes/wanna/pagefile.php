@@ -1,3 +1,4 @@
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php
 /**
  * 归档
@@ -34,7 +35,7 @@
             }
             $output .= '<li><p>'.date('d日 h:i：',$archives->created).'</p>'.'<a href="'.$archives->permalink .'">'. $archives->title .'</a>  </li>'; //输出文章日期和标题
             // <em>('. $archives->commentsNum.')</em>
-            
+
         endwhile;
         $output .= '</ul></li></ul></div>';
         echo $output;
