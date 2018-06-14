@@ -38,12 +38,12 @@ $this->need('header.php');
                     <div class="cardContent">
                         <div class="mdui-typo">
                             <div class="pageTitle">
-                                <a href="<?php $this->permalink() ?>" ><h4><font color="black"><?php $this->title() ?></font></h4></a>
+                                <h4><a href="<?php $this->permalink() ?>" ><font color="black"><?php $this->title() ?></font></a></h4>
                             </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
                                 Author: <a><?php $this->author(); ?></a>&nbsp
                                 Date: <a><?php $this->date('Y / F j'); ?></a>&nbsp
-                                Tag: <a><?php $this->category(','); ?></a>
+                                Tag: <a><?php $this->category(', '); ?></a>
                             </div>
                             <p style="font-size: 0.92em"><?php $this->excerpt(40,'...'); ?></p>
                         </div>
