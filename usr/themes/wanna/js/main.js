@@ -17,7 +17,7 @@ function reload() {
     $('.flexTag').click(function () {
         nowCard = $(this).val();
         $('.cat').remove();
-        $(this).after('<i class="fa fa-map-marker cat"></i>');
+        $(this).before('<i class="fa fa-map-marker cat"></i>');
         $('.cat').animate({
             top : '0',
             opacity : '1'
