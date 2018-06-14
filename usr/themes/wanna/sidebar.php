@@ -4,9 +4,9 @@
         <i class="mdui-icon material-icons">arrow_forward</i>
     </div>
     <ul class="small-vMenu-list" id="smallMenu">
-        <a>
+        <a href="<?php $this->options->siteUrl(); ?>start-page.rust">
             <li class="mdui-ripple">
-            <i class="fa fa-user-circle-o fa-lg"></i>
+                <i class="fa fa-user-circle-o fa-lg"></i>
             </li>
         </a>
         <a href="<?php $this->options->siteUrl(); ?>archive.rust">
