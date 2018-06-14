@@ -6,7 +6,7 @@
     <ul class="small-vMenu-list" id="smallMenu">
         <a>
             <li class="mdui-ripple">
-            <i class="fa fa-user-o fa-lg"></i>
+            <i class="fa fa-user-circle-o fa-lg"></i>
             </li>
         </a>
         <a href="<?php $this->options->siteUrl(); ?>archive.rust">
