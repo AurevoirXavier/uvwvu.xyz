@@ -21,7 +21,7 @@
         </a>
         <a href="<?php $this->options->feedUrl(); ?>">
             <li class="mdui-ripple">
-                <i class="mdui-icon material-icons">rss_feed</i>
+                <i class="fa fa-rss fa-lg"></i>
             </li>
         </a>
     </ul>
