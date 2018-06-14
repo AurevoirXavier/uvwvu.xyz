@@ -460,6 +460,8 @@ header {
     padding: 0;
 }
 .fa-map-marker {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: -15px;
     opacity: 0;
