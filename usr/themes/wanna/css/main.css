@@ -461,10 +461,11 @@ header {
 }
 .fa-map-marker {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     z-index: 0;
 }
 .cat {
+    opacity: 0;
     top: -15px;
 }
 .tabCard {
