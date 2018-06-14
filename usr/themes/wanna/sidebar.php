@@ -4,24 +4,24 @@
         <i class="mdui-icon material-icons">arrow_forward</i>
     </div>
     <ul class="small-vMenu-list" id="smallMenu">
-        <a href="<?php $this->options->siteUrl(); ?>archive.rust">
-            <li class="mdui-ripple">
-            <i class="mdui-icon material-icons">book</i>
-            </li>
-        </a>
         <a>
             <li class="mdui-ripple">
                 <i class="mdui-icon material-icons">build</i>
             </li>
         </a>
-        <a href="<?php $this->options->feedUrl(); ?>">
+        <a href="<?php $this->options->siteUrl(); ?>archive.rust">
             <li class="mdui-ripple">
-                <i class="mdui-icon material-icons">rss_feed</i>
+            <i class="mdui-icon material-icons">book</i>
             </li>
         </a>
         <a href="https://github.com/aurevoirxavier">
             <li class="mdui-ripple">
                 <i class="fa fa-github fa-lg"></i>
+            </li>
+        </a>
+        <a href="<?php $this->options->feedUrl(); ?>">
+            <li class="mdui-ripple">
+                <i class="mdui-icon material-icons">rss_feed</i>
             </li>
         </a>
     </ul>
