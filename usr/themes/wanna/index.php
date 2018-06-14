@@ -35,7 +35,6 @@ $this->need('header.php');
                         </a>
                         <div class="hiddenSquare"></div>
                     </div>
-                    <?php $title = $this->title(); ?>
                     <div class="cardContent">
                         <div class="mdui-typo">
                             <div class="pageTitle">
