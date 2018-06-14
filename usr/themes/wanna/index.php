@@ -88,7 +88,7 @@ $this->need('header.php');
                             <div class="sortBy">
                                 <div>
                                     <button class="mdui-btn mdui-ripple flexTag" value="0">Reply</button>
-                                    <i class="fa fa-map-marker"></i>
+                                    <i class="fa fa-map-marker cat"></i>
                                 </div>
                                 <div>
                                     <button class="mdui-btn mdui-ripple flexTag" value="1">Article</button>
