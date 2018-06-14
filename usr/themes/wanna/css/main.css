@@ -459,11 +459,13 @@ header {
     font-size: 0.88em;
     padding: 0;
 }
-.cat {
+.fa-map-marker {
     position: absolute;
-    top: -15px;
     opacity: 0;
     z-index: 0;
+}
+.cat {
+    top: -15px;
 }
 .tabCard {
     margin-top: 24px;
