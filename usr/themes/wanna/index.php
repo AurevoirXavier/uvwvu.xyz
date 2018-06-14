@@ -38,7 +38,8 @@ $this->need('header.php');
                     <div class="cardContent">
                         <div class="mdui-typo">
                             <div class="pageTitle">
-                                <h4><a href="<?php $this->permalink() ?>" ><font color="black"><?php echo mb_strimwidth("123123123123", 0, 10, '...'); ?></font></a></h4>
+                                <?php $title = $this->title(); ?>
+                                <h4><a href="<?php $this->permalink() ?>" ><font color="black"><?php echo mb_strimwidth($title, 0, 10, '...'); ?></font></a></h4>
                             </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
                                 Author: <a><?php $this->author(); ?></a>&nbsp
