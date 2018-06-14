@@ -35,10 +35,10 @@ $this->need('header.php');
                         </a>
                         <div class="hiddenSquare"></div>
                     </div>
+                    <?php $title = $this->title(); ?>
                     <div class="cardContent">
                         <div class="mdui-typo">
                             <div class="pageTitle">
-                                <?php $title = $this->title(); ?>
                                 <h4><a href="<?php $this->permalink() ?>" ><font color="black"><?php echo mb_strimwidth($title, 0, 10, '...'); ?></font></a></h4>
                             </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
