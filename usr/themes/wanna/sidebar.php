@@ -21,7 +21,7 @@
         </a>
         <a href="https://github.com/aurevoirxavier">
             <li class="mdui-ripple">
-                <i class="fa fa-github"></i>
+                <i class="fa fa-github fa-lg"></i>
             </li>
         </a>
     </ul>
