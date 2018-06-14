@@ -464,13 +464,8 @@ header {
     height: 100%;
     position: absolute;
     top: -15px;
-    opacity: 0;
-    z-index: 0;
-}
-.cat1 {
     opacity: 1;
-    top: 0;
-    /* 神奇的操作 */
+    z-index: 0;
 }
 .tabCard {
     margin-top: 24px;
