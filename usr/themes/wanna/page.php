@@ -12,7 +12,7 @@
         <h3><?php $this->title() ?></h3>
         <div class="taptap">
             <div>
-                <span>浏览量：<a><?php get_post_view($this) ?></a></span>
+                <span>views：<a><?php get_post_view($this) ?></a></span>
                 <span><?php $this->date('Y / F j'); ?></span>
                 <a><?php $this->author() ?></a></span>
             </div>
@@ -24,5 +24,4 @@
     </div>
 </div>
 
-<?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
