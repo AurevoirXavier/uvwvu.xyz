@@ -21,7 +21,6 @@ $this->need('header.php');
                         <a href="<?php $this->permalink() ?>">
                             <?php if($this->options->slimg && 'guanbi'==$this->options->slimg): ?>
                             <?php else: ?>
-                                <!-- TODO: refactor -->
                                 <?php if($this->options->slimg && 'showoff'==$this->options->slimg): ?><a href="<?php $this->permalink() ?>" ><?php showThumbnail($this); ?></a>
                                 <?php else: ?>
                                     <div class="cardImage-img" style="background-image: url('<?php showThumbnail($this, $pics); ?>')"></div>
@@ -37,8 +36,8 @@ $this->need('header.php');
                     </div>
                     <div class="cardContent">
                         <div class="mdui-typo">
-                            <div>
-                                <h4><a href="<?php $this->permalink() ?>" ><font color="black"><?php echo mb_strimwidth($this->title, 0, 25, '...'); ?></font></a></h4>
+                            <div class="pageTitle">
+                                <h4><a href="<?php $this->permalink() ?>" ><font color="black"><?php $this->title() ?></font></a></h4>
                             </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
                                 Author: <a><?php $this->author(); ?></a>&nbsp

@@ -217,6 +217,14 @@ header {
     position: relative;
     display: inline-block;
 }
+.pageTitle {
+    max-width: 100%;
+}
+.pageTitle > h4 > a > font {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .cardImage {
     overflow: hidden;
 }
