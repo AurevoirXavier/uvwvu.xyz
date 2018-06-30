@@ -36,8 +36,8 @@ $this->need('header.php');
                     </div>
                     <div class="cardContent">
                         <div class="mdui-typo">
-                            <div class="titleD">
-                                <a href="<?php $this->permalink() ?>" ><font color="black"><h4 class="titleF"><?php $this->title() ?></h4></font></a>
+                            <div class="pageTitle">
+                                <h4><?php $this->title() ?></h4>
                             </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
                                 Author: <a><?php $this->author(); ?></a>&nbsp
