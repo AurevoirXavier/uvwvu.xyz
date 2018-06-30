@@ -93,13 +93,13 @@ $this->need('header.php');
                             <div class="sortBy">
                                 <div>
                                     <i class="fa fa-map-marker"></i>
-                                    <button class="mdui-btn mdui-ripple flexTag" value="0">Reply</button>
+                                    <button class="mdui-btn mdui-ripple flexTag" value="2">Category</button>
                                 </div>
                                 <div>
                                     <button class="mdui-btn mdui-ripple flexTag" value="1">Article</button>
                                 </div>
                                 <div>
-                                    <button class="mdui-btn mdui-ripple flexTag" value="2">Category</button>
+                                    <button class="mdui-btn mdui-ripple flexTag" value="0">Reply</button>
                                 </div>
                             </div>
                             <div class="colorBar"></div>
