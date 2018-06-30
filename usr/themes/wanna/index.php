@@ -45,7 +45,7 @@ $this->need('header.php');
                                 Date: <a><?php $this->date('Y / F j'); ?></a>&nbsp
                                 Tag: <a><?php $this->category(', '); ?></a>
                             </div>
-                            <p style="font-size: 0.92em"><?php $this->excerpt(40,'...'); ?></p>
+                            <p style="font-size: 0.92em"><?php $this->excerpt(80,'...'); ?></p>
                         </div>
                         <div class="ovo">
                             <div class="ovo-icon">
