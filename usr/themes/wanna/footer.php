@@ -3,8 +3,8 @@
 <footer class="mdui-container-fluid shadow-1">
     <div class="mdui-row">
         <div class="mdui-col-md-4">
-            <p>Powered by <a href="http://uvwvu.com">AurevoirXavier</a></p>
-            <p>Theme: <a href="http://icry.info/">Wanna</a></p>
+            <p>Powered by <a href="//uvwvu.xyz">AurevoirXavier</a></p>
+            <p>Secondary exploration of <a href="http://icry.info/">Wanna</a></p>
         </div>
         <div class="mdui-col-md-4">
             <div id="yy520"></div>
