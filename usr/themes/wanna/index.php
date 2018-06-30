@@ -37,7 +37,7 @@ $this->need('header.php');
                     <div class="cardContent">
                         <div class="mdui-typo">
                             <div class="pageTitle">
-                                <h4 href="#"><font color="black"><?php $this->title() ?></font></h4>
+                                <h4><font color="black"><a class="pageTitle1"><?php $this->title() ?></a></font></h4>
                             </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
                                 Author: <a><?php $this->author(); ?></a>&nbsp
