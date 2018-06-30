@@ -36,9 +36,9 @@ $this->need('header.php');
                     </div>
                     <div class="cardContent">
                         <div class="mdui-typo">
-                            <a class="pageTitle" href="//baidu.com">
-                                <h4><font color="black" href="#"><?php $this->title() ?></font></h4>
-                            </a>
+                            <div class="pageTitle">
+                                <h4 href="#"><font color="black"><?php $this->title() ?></font></h4>
+                            </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
                                 Author: <a><?php $this->author(); ?></a>&nbsp
                                 Date: <a><?php $this->date('Y / F j'); ?></a>&nbsp
