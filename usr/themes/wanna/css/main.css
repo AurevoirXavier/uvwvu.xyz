@@ -217,10 +217,10 @@ header {
     position: relative;
     display: inline-block;
 }
-.pageTitleD {
+.titleD {
     max-width: 100%;
 }
-.pageTitleF {
+.titleF {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
