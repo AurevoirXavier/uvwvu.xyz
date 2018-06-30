@@ -220,7 +220,7 @@ header {
 .pageTitle {
     max-width: 100%;
 }
-.pageTitle > font {
+.pageTitle > h4 {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
