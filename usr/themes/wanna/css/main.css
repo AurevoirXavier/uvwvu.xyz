@@ -221,6 +221,7 @@ header {
     max-width: 100%;
 }
 .pageTitle > font {
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
