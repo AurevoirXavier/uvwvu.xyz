@@ -36,15 +36,15 @@ $this->need('header.php');
                     </div>
                     <div class="cardContent">
                         <div class="mdui-typo">
-                            <a href="<?php $this->permalink() ?>" >
-                                <div class="pageTitle">
-                                    <h4>
+                            <div class="pageTitle">
+                                <h4 class="pageTitle">
+                                    <a href="<?php $this->permalink() ?>" >
                                         <font color="black">
                                             <?php $this->title() ?>
                                         </font>
-                                    </h4>
-                                </div>
-                            </a>
+                                    </a>
+                                </h4>
+                            </div>
                             <div style="margin-bottom: 10px;line-height: 1.5em">
                                 Author: <a><?php $this->author(); ?></a>&nbsp
                                 Date: <a><?php $this->date('Y / F j'); ?></a>&nbsp
