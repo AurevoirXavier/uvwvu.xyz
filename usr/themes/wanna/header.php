@@ -51,7 +51,7 @@
                             <i id="pull_down_btn" class="fa fa-chevron-down fa-lg"></i>
                         </button>
                         <button class="mb-btn mdui-ripple" id="open-Vmenu">
-                            <i id="sidebar_btn" class="fa fa-chevron-up fa-lg"></i>
+                            <i id="sidebar_btn" class="fa fa-chevron-left fa-lg"></i>
                         </button>
                     </li>
     </ul>
