@@ -47,10 +47,10 @@
                         <li class="mobie-head"><?php $this->options->title() ?></li>
                     </a>
                     <li class="mdui-ripple" id="controlBtn">
-                        <button class="mb-btn" id="open-Vmenu">
+                        <button class="mb-btn" id="open-hMenu">
                             <i class="material-icons mdui-icon">details</i>
                         </button>
-                        <button class="mb-btn mdui-ripple" id="open-hMenu">
+                        <button class="mb-btn mdui-ripple" id="open-Vmenu">
                             <i class="mdui-icon material-icons">menu</i>
                         </button>
                     </li>
@@ -71,7 +71,7 @@
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
                 $('#controlBtn').find('i').eq(1).text('menu');
                 mh.css({display: 'block'});
-                $('#open-Vmenu').css({display : 'inline-block'});
+                $('#open-hMenu').css({display : 'inline-block'});
                 switchNow = 0;
             }
         });
