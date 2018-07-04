@@ -58,7 +58,7 @@
     <script>
         switchNow = 0;
         var mh = $('.mobie-head');
-        $('#open-hMenu').click(function () {
+        $('#open-Vmenu').click(function () {
             if (switchNow == 0){
                 an_Move('header','0','160px','400ms');
                 animateFor('#controlBtn','controlBtnSB','controlBtnSS');
