@@ -69,7 +69,7 @@
             }else {
                 an_Move('header','0','0','400ms');
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
-                $('#sidebar_btn').attr('class', 'fa fa-chevron-left fa-lg');
+                $('#pull_down_btn').attr('class', 'fa fa-chevron-down fa-lg');
                 mh.css({display: 'block'});
                 $('#open-Vmenu').css({display : 'inline-block'});
                 switchNow = 0;
