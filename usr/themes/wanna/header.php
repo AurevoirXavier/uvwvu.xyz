@@ -48,10 +48,10 @@
                     </a>
                     <li class="mdui-ripple" id="controlBtn">
                         <button class="mb-btn" id="open-hMenu">
-                            <i id="pull_down_btn" class="fa fa-angle-double-down fa-lg"></i>
+                            <i id="pull_down_btn" class="fa fa-angle-double-down"></i>
                         </button>
                         <button class="mb-btn mdui-ripple" id="open-Vmenu">
-                            <i id="sidebar_btn" class="fa fa-angle-double-left fa-lg"></i>
+                            <i id="sidebar_btn" class="fa fa-angle-double-left"></i>
                         </button>
                     </li>
     </ul>
@@ -62,14 +62,14 @@
             if (switchNow == 0){
                 an_Move('header','0','160px','400ms');
                 animateFor('#controlBtn','controlBtnSB','controlBtnSS');
-                // $('#pull_down_btn').class('fa fa-angle-double-up fa-lg');
+                $('#pull_down_btn').attr('class', 'fa fa-angle-double-up');
                 mh.css({display: 'none'});
                 $('#open-Vmenu').css({display : 'none'});
                 switchNow = 1;
             }else {
                 an_Move('header','0','0','400ms');
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
-                // $('#sidebar_btn').class('fa fa-angle-double-left fa-lg');
+                $('#sidebar_btn').attr('class', 'fa fa-angle-double-left');
                 mh.css({display: 'block'});
                 $('#open-Vmenu').css({display : 'inline-block'});
                 switchNow = 0;
