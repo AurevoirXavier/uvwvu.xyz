@@ -58,7 +58,7 @@
     <script>
         switchNow = 0;
         var mh = $('.mobie-head');
-        $('#open-Vmenu').click(function () {
+        $('#open-hMenu').click(function () {
             if (switchNow == 0){
                 an_Move('header','0','160px','400ms');
                 animateFor('#controlBtn','controlBtnSB','controlBtnSS');
@@ -71,7 +71,7 @@
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
                 $('#controlBtn').find('i').eq(1).text('menu');
                 mh.css({display: 'block'});
-                $('#open-Vmenu').css({display : 'inline-block'});
+                $('#open-hMenu').css({display : 'inline-block'});
                 switchNow = 0;
             }
         });
