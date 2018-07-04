@@ -69,7 +69,7 @@
             }else {
                 an_Move('header','0','0','400ms');
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
-                $('#controlBtn').find('i').eq(2).text('close');
+                $('#controlBtn').find('i').eq(0).text('close');
                 mh.css({display: 'block'});
                 $('#open-Vmenu').css({display : 'inline-block'});
                 switchNow = 0;
