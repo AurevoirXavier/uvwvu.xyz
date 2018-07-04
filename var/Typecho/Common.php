@@ -446,11 +446,12 @@ EOF;
      */
     public static function isAppEngine()
     {
-        return !empty($_SERVER['HTTP_APPNAME'])                     // SAE
-            || !!getenv('HTTP_BAE_ENV_APPID')                       // BAE
-            || !!getenv('HTTP_BAE_LOGID')                           // BAE 3.0
-            || (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) // GAE
-            ;
+        return false;
+        // return !empty($_SERVER['HTTP_APPNAME'])                     // SAE
+        //     || !!getenv('HTTP_BAE_ENV_APPID')                       // BAE
+        //     || !!getenv('HTTP_BAE_LOGID')                           // BAE 3.0
+        //     || (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) // GAE
+        //     ;
     }
 
     /**
