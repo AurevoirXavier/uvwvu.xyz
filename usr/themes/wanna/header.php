@@ -48,12 +48,10 @@
                     </a>
                     <li class="mdui-ripple" id="controlBtn">
                         <button class="mb-btn" id="open-hMenu">
-                            <!-- <i class="material-icons mdui-icon">details</i> -->
-                            <i class="fa fa-chevron-circle-down fa-lg"></i>
+                            <i class="fa fa-angle-double-down fa-lg"></i>
                         </button>
                         <button class="mb-btn mdui-ripple" id="open-Vmenu">
-                            <!-- <i class="mdui-icon material-icons">menu</i> -->
-                            <i class="fa fa-chevron-circle-left fa-lg"></i>
+                            <i class="fa fa-angle-double-left fa-lg"></i>
                         </button>
                     </li>
     </ul>
@@ -64,14 +62,14 @@
             if (switchNow == 0){
                 an_Move('header','0','160px','400ms');
                 animateFor('#controlBtn','controlBtnSB','controlBtnSS');
-                $('#controlBtn').find('i').eq(0).class('fa fa-close fa-lg');
+                $('#controlBtn').find('i').eq(0).class('fa fa-angle-double-up fa-lg');
                 mh.css({display: 'none'});
                 $('#open-Vmenu').css({display : 'none'});
                 switchNow = 1;
             }else {
                 an_Move('header','0','0','400ms');
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
-                $('#controlBtn').find('i').eq(0).class('fa fa-chevron-circle-down fa-lg');
+                $('#controlBtn').find('i').eq(0).class('fa fa-angle-double-left fa-lg');
                 mh.css({display: 'block'});
                 $('#open-Vmenu').css({display : 'inline-block'});
                 switchNow = 0;
