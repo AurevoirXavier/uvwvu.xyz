@@ -62,7 +62,7 @@
             if (switchNow == 0){
                 an_Move('header','0','160px','400ms');
                 animateFor('#controlBtn','controlBtnSB','controlBtnSS');
-                $('#controlBtn').find('i').eq(1).text('menu');
+                $('#controlBtn').find('i').eq(1).text('close');
                 mh.css({display: 'none'});
                 $('#open-Vmenu').css({display : 'none'});
                 switchNow = 1;
