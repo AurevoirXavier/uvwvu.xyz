@@ -62,14 +62,14 @@
             if (switchNow == 0){
                 an_Move('header','0','160px','400ms');
                 animateFor('#controlBtn','controlBtnSB','controlBtnSS');
-                $('#controlBtn').find('i').eq(0).text('menu');
+                $('#controlBtn').find('i').eq(1).text('menu');
                 mh.css({display: 'none'});
                 $('#open-Vmenu').css({display : 'none'});
                 switchNow = 1;
             }else {
                 an_Move('header','0','0','400ms');
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
-                $('#controlBtn').find('i').eq(0).text('close');
+                $('#controlBtn').find('i').eq(2).text('close');
                 mh.css({display: 'block'});
                 $('#open-Vmenu').css({display : 'inline-block'});
                 switchNow = 0;
