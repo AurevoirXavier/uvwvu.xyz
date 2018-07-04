@@ -47,10 +47,10 @@
                         <li class="mobie-head"><?php $this->options->title() ?></li>
                     </a>
                     <li class="mdui-ripple" id="controlBtn">
-                        <button class="mb-btn mdui-ripple" id="open-hMenu">
+                        <button class="mb-btn" id="open-Vmenu">
                             <i class="material-icons mdui-icon">details</i>
                         </button>
-                        <button class="mb-btn" id="open-Vmenu">
+                        <button class="mb-btn mdui-ripple" id="open-hMenu">
                             <i class="mdui-icon material-icons">menu</i>
                         </button>
                     </li>
