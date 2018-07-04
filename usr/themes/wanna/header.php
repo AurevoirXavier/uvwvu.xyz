@@ -32,7 +32,7 @@
                 <form class="m-s-input" action="" method="post">
                     <input type="text" name="s" placeholder="Search..." />
                     <button class="justCenter btnclearDcss">
-                        <i class="mdui-icon material-icons" style="font-size: 22px;color: gray;">Search</i>
+                        <i class="mdui-icon material-icons" style="font-size: 22px;color: gray;">search</i>
                     </button>
                 </form>
         </li>
