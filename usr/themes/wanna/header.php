@@ -62,14 +62,14 @@
             if (switchNow == 0){
                 an_Move('header','0','160px','400ms');
                 animateFor('#controlBtn','controlBtnSB','controlBtnSS');
-                $('#pull_down_btn').class('fa fa-angle-double-up fa-lg');
+                // $('#pull_down_btn').class('fa fa-angle-double-up fa-lg');
                 mh.css({display: 'none'});
                 $('#open-Vmenu').css({display : 'none'});
                 switchNow = 1;
             }else {
                 an_Move('header','0','0','400ms');
                 animateFor('#controlBtn','controlBtnSS','controlBtnSB');
-                $('#sidebar_btn').class('fa fa-angle-double-left fa-lg');
+                // $('#sidebar_btn').class('fa fa-angle-double-left fa-lg');
                 mh.css({display: 'block'});
                 $('#open-Vmenu').css({display : 'inline-block'});
                 switchNow = 0;
