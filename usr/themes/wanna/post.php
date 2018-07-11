@@ -1,8 +1,8 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('header.php'); ?>
 
-<link href="//s.uvwvu.xyz/prism/prism.css" rel="stylesheet" />
+<?php $this->need('header.php'); ?>
 <script src="//s.uvwvu.xyz/prism/prism.js"></script>
+<link href="//s.uvwvu.xyz/prism/prism.css" rel="stylesheet" />
 <style>
     #body {
         display: block !important;
