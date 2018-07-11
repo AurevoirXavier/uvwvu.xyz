@@ -1,9 +1,8 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<link rel="stylesheet" href="//s.uvwvu.xyz/highlight/styles/default.css">
-<script src="//s.uvwvu.xyz/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<link href="//s.uvwvu.xyz/prism/prism.css" rel="stylesheet" />
+<script src="//s.uvwvu.xyz/prism/prism.js"></script>
 <style>
     #body {
         display: block !important;
