@@ -9,6 +9,7 @@
     <link rel="icon" href="<?php echo $this->options->icon ?>">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/mdui/0.4.1/css/mdui.min.css" rel="stylesheet">
+    <link href="//s.uvwvu.xyz/prism/prism.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//s.uvwvu.xyz/live2d/waifu.css"/>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>

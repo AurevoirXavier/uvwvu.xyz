@@ -14,6 +14,8 @@
         </div>
     </div>
 
+    <script src="//s.uvwvu.xyz/prism/prism.js"></script>
+
     <script>
         fetch('https://v1.hitokoto.cn')
             .then(function (res){
