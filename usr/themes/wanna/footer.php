@@ -4,6 +4,7 @@
     <div class="mdui-row">
         <div class="mdui-col-md-4">
             <p>Powered by <a href="//uvwvu.xyz">AurevoirXavier</a></p>
+            <p><?php getBuildTime(Typecho_Widget::widget('Widget_Options')->start_time);  ?></p>
             <p>Secondary exploration of <a href="http://icry.info/">Wanna</a></p>
         </div>
         <div class="mdui-col-md-4">
@@ -26,7 +27,7 @@
             .catch(function (err) {
                 console.error(err);
             });
-        $(document).pjax('#body a,#header a,#vMenu a','#body',{
+            $(document).pjax('#body a,#header a,#vMenu a','#body',{
             fragment: '#body',
             timeout : '50000'
         });
