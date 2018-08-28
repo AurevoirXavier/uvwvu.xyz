@@ -4,9 +4,9 @@ window.onload = function () {
 function reload() {
     $('.flexTag').click(function () {
         nowCard = $(this).val();
-        $('.cat').remove();
-        $(this).after('<div class="cat"></div>');
-        $('.cat').animate({
+        $('.fa-map-marker').remove();
+        $(this).before('<i class="fa fa-map-marker map-marker"></i>');
+        $('.fa-map-marker').animate({
             top : '0',
             opacity : '1'
         });
