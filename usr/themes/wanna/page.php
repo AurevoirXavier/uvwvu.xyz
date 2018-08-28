@@ -20,7 +20,7 @@
                 <?php $this->title() ?>
                 <div class="taptap">
                     <div>
-                        <span>浏览量：<a><?php get_post_view($this) ?></a></span>
+                        <span>Views: <a><?php get_post_view($this) ?></a></span>
                         <span><?php $this->date(); ?></span>
                         <a><?php $this->author() ?></a></span>
                     </div>

@@ -4,22 +4,22 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form) {
     $bgUrl = new Typecho_Widget_Helper_Form_Element_Text('bgUrl', NULL, NULL, _t('主题背景图片'), _t('填入外部链接来更新背景图片 , 默认使用 bg.jpg'));
     $form->addInput($bgUrl);
-
+    
     $hIcon = new Typecho_Widget_Helper_Form_Element_Text('hIcon', NULL, NULL, _t('顶栏logo'), _t('填入外部链接来更新顶栏logo , 不填写则不会出现'));
     $form->addInput($hIcon);
 
     $logo = new Typecho_Widget_Helper_Form_Element_Text('logo', NULL, NULL, _t('侧边栏Logo'), _t('填入外部链接来更新Logo'));
     $form->addInput($logo);
-
+    
     $icon = new Typecho_Widget_Helper_Form_Element_Text('icon', NULL, NULL, _t('网站图标'), _t('填入外部链接来更新icon'));
     $form->addInput($icon);
-
+    
     $start_time = new Typecho_Widget_Helper_Form_Element_Text('start_time', NULL, NULL, _t('博客运行时间记录（开始时间）'), _t('格式 2018-04-10 00:00:00 务必一致'));
     $form->addInput($start_time);
-
+    
     $pay = new Typecho_Widget_Helper_Form_Element_Text('pay', NULL, NULL, _t('赞赏二维码'), _t('推荐支付宝or微信二维码'));
     $form->addInput($pay);
-
+    
     $comNum = new Typecho_Widget_Helper_Form_Element_Select('comNum', array(
         '6'=>'默认',
         '7'=>'7',
@@ -52,7 +52,7 @@ function themeFields($layout) {
     $layout->addItem($thumb);
 }
 /** 输出文章缩略图 */
-function showThumbnail($widget)
+function showThumbnail($widget, &$pics=array())
 {
     // 当文章无图片时的默认缩略图
     $dir = './usr/themes/wanna/img/random/';//随机缩略图目录
@@ -61,7 +61,11 @@ function showThumbnail($widget)
         $n=5;
     }// 异常处理，干掉自动判断图片数量的功能，切换至手动
     $rand = rand(1,$n);
-    // 随机 n张缩略图
+    while(in_array($rand, $pics)) {
+        $rand = rand(1,$n);
+    }
+    array_push($pics, $rand);
+    // ax: deal with repeat
 
     $random = $widget->widget('Widget_Options')->themeUrl . '/img/random/' . $rand . '.jpg'; // 随机缩略图路径
     if(Typecho_Widget::widget('Widget_Options')->slimg && 'Showimg'==Typecho_Widget::widget('Widget_Options')->slimg
@@ -78,7 +82,7 @@ function showThumbnail($widget)
         $ctu = $thumbUrl[1][0].$cai;
     }
 
-//如果是内联式markdown格式的图片
+    //如果是内联式markdown格式的图片
     else   if (preg_match_all($patternMD, $widget->content, $thumbUrl)) {
         $ctu = $thumbUrl[1][0].$cai;
     }
