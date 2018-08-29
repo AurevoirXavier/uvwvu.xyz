@@ -36,16 +36,6 @@
             <a href="<?php $this->options->adminUrl(); ?>">
                 <button class="loginBtn mdui-ripple">登陆</button>
             </a>
-        </li>
-        <li class="mobie-head-search justCenter">
-                <form class="m-s-input" action="" method="post">
-                    <input type="text" name="s" placeholder="Search..." />
-                    <button class="justCenter btnclearDcss">
-                        <i class="mdui-icon material-icons" style="font-size: 22px;color: gray;">search</i>
-                    </button>
-                </form>
-        </li>
-    </ul>
     <ul class="header-tab-1 header-tab-2" >
         <?php if($this->user->hasLogin()): ?>
                     <li><a href="<?php $this->options->adminUrl(); ?>">Welcome, <?php $this->user->screenName(); ?></a></li>
@@ -85,6 +75,15 @@
             }
         });
     </script>
+    <?php endif; ?>
+            <button class="noColorBtn mdui-ripple searchBtn">
+                <i class="mdui-icon material-icons">search</i>
+            </button>
+            <button class="noColorBtn mdui-ripple sidebarControlBtn">
+                <i class="mdui-icon material-icons">menu</i>
+            </button>
+        </div>
+    </div>
 </header>
 <div class="bg-ovo"></div>
 
