@@ -45,6 +45,27 @@
             </button>
         </div>
     </div>
+    <script>
+        switchNow = 0;
+        var mh = $('.mobie-head');
+        $('#open-hMenu').click(function () {
+            if (switchNow == 0){
+                an_Move('header','0','160px','400ms');
+                animateFor('#controlBtn','controlBtnSB','controlBtnSS');
+                $('#pull_down_btn').attr('class', 'fa fa-chevron-up fa-lg');
+                mh.css({display: 'none'});
+                $('#open-Vmenu').css({display : 'none'});
+                switchNow = 1;
+            }else {
+                an_Move('header','0','0','400ms');
+                animateFor('#controlBtn','controlBtnSS','controlBtnSB');
+                $('#pull_down_btn').attr('class', 'fa fa-chevron-down fa-lg');
+                mh.css({display: 'block'});
+                $('#open-Vmenu').css({display : 'inline-block'});
+                switchNow = 0;
+            }
+        });
+    </script>
 </header>
 <div class="bg-ovo"></div>
 
