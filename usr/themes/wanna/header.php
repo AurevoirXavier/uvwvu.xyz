@@ -36,27 +36,6 @@
                     </button>
                 </form>
         </li>
-        <a id="wsTitle" class="mdui-text-truncate" href="<?php $this->options->siteUrl(); ?>" style="flex: 1;background-image: url('<?php $this->options->hIcon() ?>')">
-            <?php $this->options->title() ?>
-        </a>
-        <form style="height: 100%">
-            <input type="text" style="display:none">
-            <input type="text" autocomplete="off" name="s" placeholder="回车进行搜索" id="search" />
-        </form>
-        <div class="header-tool">
-            <?php if($this->user->hasLogin()): ?>
-            <?php else: ?>
-            <a href="<?php $this->options->adminUrl(); ?>">
-                <button class="loginBtn mdui-ripple">登陆</button>
-            </a>
-            <?php endif; ?>
-            <button class="noColorBtn mdui-ripple searchBtn">
-                <i class="mdui-icon material-icons">search</i>
-            </button>
-            <button class="noColorBtn mdui-ripple sidebarControlBtn">
-                <i class="mdui-icon material-icons">menu</i>
-            </button>
-        </div>
     </ul>
     <ul class="header-tab-1 header-tab-2" >
         <?php if($this->user->hasLogin()): ?>
