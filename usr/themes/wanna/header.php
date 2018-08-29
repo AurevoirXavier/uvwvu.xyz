@@ -21,11 +21,20 @@
     <img src="<?php $this->options->themeUrl('img/load.gif'); ?>">
     <h3 style="margin-top: 15px;color: white;">Loading...</h3>
 </div>
-<header id="header">
-    <ul class="header-tab-1">
-        <li class="mdui-ripple">
-            <a href="<?php $this->options->siteUrl(); ?>">
-                <?php $this->options->title() ?>
+<header>
+    <div id="header">
+        <a id="wsTitle" class="mdui-text-truncate" href="<?php $this->options->siteUrl(); ?>" style="flex: 1;background-image: url('<?php $this->options->hIcon() ?>')">
+            <?php $this->options->title() ?>
+        </a>
+        <form style="height: 100%">
+            <input type="text" style="display:none">
+            <input type="text" autocomplete="off" name="s" placeholder="回车进行搜索" id="search" />
+        </form>
+        <div class="header-tool">
+            <?php if($this->user->hasLogin()): ?>
+            <?php else: ?>
+            <a href="<?php $this->options->adminUrl(); ?>">
+                <button class="loginBtn mdui-ripple">登陆</button>
             </a>
         </li>
         <li class="mobie-head-search justCenter">
