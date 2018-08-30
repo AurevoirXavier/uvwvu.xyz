@@ -68,7 +68,7 @@ if(is_array($_GET)&&count($_GET)>0)
                 <div class="mdui-col-xs-12 mdui-col-md-12 getData-input" id="content">
                     <textarea name="text" id="textarea" class="textarea" placeholder="Content..." required ><?php $this->remember('text'); ?></textarea>
                 </div>
-                <div class="mdui-col-xs-12 mdui-col-md-2" id="subBtn" style="left: 50%; margin-left: -84px">
+                <div class="mdui-col-xs-12 mdui-col-md-2" id="subBtn">
                     <button class="mdui-ripple" type="submit">Submit</button>
                 </div>
             </form>
