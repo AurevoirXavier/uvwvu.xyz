@@ -32,13 +32,10 @@ if(is_array($_GET)&&count($_GET)>0)
     </div>
     <div class="newBB mdui-row">
         <div class="mdui-row">
-        <div class="replyId smallSize" id="replyId">Reply to <span class="reply-name"></span>&nbsp<span class="replyCon"></span></div>
             <form method="post" action="<?php $this->commentUrl() ?>" style="width: 100%" role="form" id="comment_form">
-                <div class="mdui-col-xs-12 mdui-col-md-12 getData-input" id="content">
-                    <textarea name="text" id="textarea" class="textarea" placeholder="Content..." required ><?php $this->remember('text'); ?></textarea>
-                </div>
+            <div class="replyId" id="replyId" style="float: left">To: <span class="reply-name"></span>&nbsp<span class="replyCon"></span></div>
                 <?php if($this->user->hasLogin()): ?>
-                    <p><?php _e('From: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>.  <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('Sign out'); ?> &raquo; </a></p>
+                    <div style="float: right"><?php _e('From: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. &nbsp<a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('Sign out'); ?> &raquo; </a></div>
                 <?php else: ?>
                     <a class="smallSize" href="<?php $this->options->adminUrl(); ?>">Sign in</a>
                     <div class="userIC">
@@ -53,6 +50,9 @@ if(is_array($_GET)&&count($_GET)>0)
                         </div>
                     </div>
                 <?php endif; ?>
+                <div class="mdui-col-xs-12 mdui-col-md-12 getData-input" id="content">
+                    <textarea name="text" id="textarea" class="textarea" placeholder="Content..." required ><?php $this->remember('text'); ?></textarea>
+                </div>
                 <div class="mdui-col-xs-12 mdui-col-md-2" id="subBtn">
                     <button class="mdui-ripple" type="submit">Submit</button>
                 </div>
