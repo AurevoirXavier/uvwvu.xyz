@@ -118,17 +118,14 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    right: 0;
-    height: 68px;
+    right: 190px;
+    min-height: 50px;
     box-sizing: border-box;
     background-color: hsla(0,0%,100%,.4);
     box-shadow: 0 1px 2px rgba(0,0,0,.1);
-    padding: 0 24px;
+    padding: 0 30px;
+    padding-left: 220px;
     z-index: 99;
-    padding-right: 244px;
-    padding-top: 6px;
-    transition: all .4s;
-    will-change: transform;
 }
 .mobie-head-search {
     height: 50px;
@@ -177,8 +174,6 @@ header {
 .blogBody {
     flex: 1 0 auto;
     color: gray;
-    margin: 0 !important;
-    margin-bottom: 50px;
     position: relative;
     overflow: hidden;
 }
