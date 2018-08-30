@@ -697,47 +697,44 @@ header {
     position: relative;
     top: 24px;
 }
+.comFiled {padding: 0 16px;}
+.comFiled > div {
+    margin-top: 20px;
+    position: relative;
+}.comTool {
+    padding: 3px 12px;
+ }
 .newBB {
     box-sizing: border-box;
-    padding: 0 40px;
+    padding: 0 32px !important;
 }
+.smallSize {font-size: 12px}
 .comments > ol {
     padding-left: 0 !important;
 }
 .nextPrev {
-    min-width: 300px;
-    position: absolute;
-    right:12px;
-    bottom: 12px;
+    width: 100%;
     box-sizing: border-box;
-    align-items: center;
     border-radius: 3px;
+    display: flex;
+    margin-top: 8px;
 }
 .nextPrev > div {
     text-align: center;
-    padding: 0 12px;
-    width: 150px;
+    padding: 0 8px;
+    width: 50%;
     height: 40px;
     line-height: 40px;
-    display: inline-block;
+    display: flex;
     position: relative;
-}
-.nextPrev > div:first-child:after {
-    content: '';
-    width: 3px;
-    height: 12px;
-    background: #8ec5fc;
-    position: absolute;
-    right: -3px;
-    z-index: 99;
-    top: 14px;
+    align-items: center;
 }
 .nextPrev > div > i {
     font-size: 22px;
 }
 .nextPrev > div > a {
     display: inline-block;
-    width: 70%;
+    width: 100%;
     line-height: 40px;
     text-decoration: none;
     letter-spacing: 1px;
@@ -748,13 +745,19 @@ header {
 }
 .userBB {
     width: 100%;
-    margin-top: 8px;
-    border-radius: 4px;
-    box-shadow: 0 0 2px rgba(0,0,0,.2);
     position: relative;
     box-sizing: border-box;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
     background-color: white;
+}
+.sibi > .comFiled .comment-list > .userBB:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    right: 10%;
+    height: 1px;
+    background: rgba(0,0,0,.1);
 }
 .replyTools {
     width: 40px;
@@ -766,6 +769,7 @@ header {
     z-index: 1;
 }.replyBtn > i {
     color: rgba(0,0,0,.35);
+    font-size: 20px;
  }.replyBtn > a {
     display: block;
     height: 40px;
@@ -774,59 +778,50 @@ header {
     z-index: 1;
     opacity: 0;
    }
-.userBB:after {
-    content: '';
-    width: 3px;
-    height: 50px;
-    background: lightblue;
-    position: absolute;
-    top: 30px;
-    right: 0;
-}
-.comment-children > ol > .userBB:after {
-    background: #D2C2ED;
-}
 .userData {
     position: relative;
-    padding: 3px 20px;
-    margin: 10px 0;
+    padding: 3px 16px;
+    margin: 5px 0;
+    display: flex;
 }
 .userIcon {
-    width: 65px;
-    height: 65px;
     position: relative;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
 }
 .userIcon > img {
     border-radius: 50%;
-    position: absolute;
+    border: 3px solid white;
+    box-shadow: 0 1px 6px rgba(0,0,0,.22);
+    box-sizing: border-box;
 }
 .userName {
     min-width: 200px;
-    height: 65px;
-    position: absolute;
-    right: -200px;
-    padding-left: 12px;
+    padding-left: 8px;
     box-sizing: border-box;
 }
 
 .name {
-    font-size: 18px;
-    height: 40px;
-    line-height: 45px;
+    font-size: 16px;
+    height: 36px;
+    line-height: 44px;
 }
 .Jurisdiction {
-    height: 25px;
+    font-size: 13px;
 }
 .userBB-Content {
     width: 100%;
     padding: 0 24px;
     box-sizing: border-box;
+    font-size: 14px;
 }
 .comment-list {
     position: relative;
-    padding-left: 0.2em !important;
+    padding-left: 0 !important;
 }
 /*archive*/
 .vCard {
