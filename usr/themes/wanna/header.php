@@ -38,6 +38,10 @@
         </li>
     </ul>
     <ul class="header-tab-1 header-tab-2" >
+        <form style="height: 100%">
+            <input type="text" style="display:none">
+            <input type="text" autocomplete="off" name="s" placeholder="回车进行搜索" id="search" />
+        </form>
         <?php if($this->user->hasLogin()): ?>
                     <li><a href="<?php $this->options->adminUrl(); ?>">Welcome, <?php $this->user->screenName(); ?></a></li>
         <?php else: ?>
