@@ -13,8 +13,12 @@ if(is_array($_GET)&&count($_GET)>0)
         replyName =  replyId.find('.name:first > a').text();
         if (replyId !== ''){
             $('.replyId').fadeIn();
-            $('.reply-name').text(replyName);
-        }else {
+            if (replyName !== '') {
+                $('.reply-name').text(replyName);
+            } else {
+                $('.reply-name').text(replyId.find('.name:first').text());
+            }
+        } else {
             $('.replyId').css({
                 display : 'none'
             })
