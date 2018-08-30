@@ -27,23 +27,23 @@ if(is_array($_GET)&&count($_GET)>0)
     <?php $this->comments()->to($comments); ?>
     <?php if($this->allow('comment')): ?>
     <div class="pageHead" id="<?php $this->respondId(); ?>">
-        <h4><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h4>
+        <h4><?php $this->commentsNum(_t('No commennt yet'), _t('Only one comment'), _t('There are %d comments')); ?></h4>
         <div class="mdui-divider" style="margin: 15px 0"></div>
     </div>
     <div class="newBB mdui-row">
-        <div class="replyId smallSize" id="replyId">正在回复给 <span class="reply-name"></span>&nbsp<span class="replyCon"></span></div>
+        <div class="replyId smallSize" id="replyId">Reply to <span class="reply-name"></span>&nbsp<span class="replyCon"></span></div>
         <div class="mdui-row">
             <form method="post" action="<?php $this->commentUrl() ?>" style="width: 100%" role="form" id="comment_form">
                 <?php if($this->user->hasLogin()): ?>
-                    <p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo; </a></p>
+                    <p><?php _e('From: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('Sign out'); ?> &raquo; </a></p>
                 <?php else: ?>
-                    <a class="smallSize" href="<?php $this->options->adminUrl(); ?>">去登陆?</a>
+                    <a class="smallSize" href="<?php $this->options->adminUrl(); ?>">Sign in</a>
                     <div class="userIC">
                         <div class="mdui-col-xs-12 mdui-col-md-3 getData-input" id="userName">
-                            <input type="text" placeholder="昵称" name="author" value="<?php $this->remember('author'); ?>" required />
+                            <input type="text" placeholder="Name" name="author" value="<?php $this->remember('author'); ?>" required />
                         </div>
                         <div class="mdui-col-xs-12 mdui-col-md-4 getData-input" id="mail">
-                            <input type="email" placeholder="邮箱" name="mail" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
+                            <input type="email" placeholder="E-mail" name="mail" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
                         </div>
                         <div class="mdui-col-xs-12 mdui-col-md-4 getData-input" id="urls">
                             <input type="text" name="url" id="urls" placeholder="http://" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?>/>
@@ -51,15 +51,15 @@ if(is_array($_GET)&&count($_GET)>0)
                     </div>
                 <?php endif; ?>
                 <div class="mdui-col-xs-12 mdui-col-md-12 getData-input" id="content">
-                    <textarea name="text" id="textarea" class="textarea" placeholder="评论内容" required ><?php $this->remember('text'); ?></textarea>
+                    <textarea name="text" id="textarea" class="textarea" placeholder="Content..." required ><?php $this->remember('text'); ?></textarea>
                 </div>
                 <div class="mdui-col-xs-12 mdui-col-md-2" id="subBtn">
-                    <button class="mdui-ripple" type="submit">提交评论</button>
+                    <button class="mdui-ripple" type="submit">Submit</button>
                 </div>
             </form>
         </div>
         <?php else: ?>
-            <h3><?php _e('评论已关闭'); ?></h3>
+            <h3><?php _e('Author do not allow to comment'); ?></h3>
         <?php endif; ?> <!-- 判断是否允许评论 -->
     </div>
     <div class="mdui-row comFiled">
@@ -67,16 +67,16 @@ if(is_array($_GET)&&count($_GET)>0)
             <?php $comments->listComments(); ?>
         </div>
         <div class="mdui-col-md-4 comTool">
-            <h4>标签云</h4>
+            <h4>Tags</h4>
             <div class="tags">
                 <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=30')->to($tags); ?>
                 <?php if($tags->have()): ?>
                 <ul class="tags-list">
                     <?php while ($tags->next()): ?>
-                        <li class="mdui-ripple"><a href="<?php $tags->permalink(); ?>" rel="tag" class="size-<?php $tags->split(5, 10, 20, 30); ?>" title="<?php $tags->count(); ?> 个话题"><?php $tags->name(); ?></a></li>
+                        <li class="mdui-ripple"><a href="<?php $tags->permalink(); ?>" rel="tag" class="size-<?php $tags->split(5, 10, 20, 30); ?>" title="There are <?php $tags->count(); ?> topics"><?php $tags->name(); ?></a></li>
                     <?php endwhile; ?>
                     <?php else: ?>
-                        <li><?php _e('没有任何标签'); ?></li>
+                        <li><?php _e('No tags yet'); ?></li>
                     <?php endif; ?>
                 </ul>
             </div>
