@@ -3,7 +3,7 @@
     margin: 0;
 }
 h1,h2,h3,h4,h5,h6 {
-    font-weight: 300 !important;
+    font-weight: 300;
 }
 a {
     text-decoration: none;
@@ -100,6 +100,8 @@ footer > div > div {
 
 body {
     padding-top: 80px;
+    padding-right: 220px;
+    transition: all .34s;
 }
 body,html {height: 100%}
 #body {
