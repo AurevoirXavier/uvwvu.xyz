@@ -12,6 +12,9 @@ if(is_array($_GET)&&count($_GET)>0)
         replyId = $('#comment-'+"<?php echo $ac; ?>");
         replyName =  replyId.find('.name:first > a').text();
         replyCon =  replyId.find('.userBB-Content:first > p').text();
+        if (replyCon.length > 5) {
+            replyCon = replyCon.substring(0, 5) + '...';
+        }
         if (replyId !== ''){
             $('.replyId').fadeIn();
             $('.replyCon').text('"'+replyCon+'"');
