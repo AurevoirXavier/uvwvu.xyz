@@ -11,11 +11,9 @@ if(is_array($_GET)&&count($_GET)>0)
     $(document).ready(function () {
         replyId = $('#comment-'+"<?php echo $ac; ?>");
         replyName =  replyId.find('.name:first > a').text();
-        replyCon =  replyId.find('.userBB-Content:first > p').text();
         if (replyId !== ''){
             $('.replyId').fadeIn();
             $('.reply-name').text(replyName);
-            $('.replyCon').text(replyCon);
         }else {
             $('.replyId').css({
                 display : 'none'
@@ -33,7 +31,7 @@ if(is_array($_GET)&&count($_GET)>0)
     <div class="newBB mdui-row">
         <div class="mdui-row">
             <form method="post" action="<?php $this->commentUrl() ?>" style="width: 100%" role="form" id="comment_form">
-            <div class="replyId" id="replyId" style="float: left">To: <span class="reply-name"></span>&nbsp<span class="replyCon"></span></div>
+            <div class="replyId" id="replyId" style="float: left">To: <span class="reply-name"></span></div>
                 <?php if($this->user->hasLogin()): ?>
                     <div style="float: right"><?php _e('From: '); ?><?php $this->user->screenName(); ?>. &nbsp<a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('Sign out'); ?> &raquo; </a></div>
                 <?php else: ?>
