@@ -78,15 +78,6 @@ $this->need('header.php');
             <div class="right-pageTagMenu mdui-col-md-3">
                 <div class="vBox">
                     <div class="control shadow-2">
-                        <div class="search">
-                            <div class="searchBtn justCenter">
-                                <i class="mdui-icon material-icons">search</i>
-                            </div>
-                            <div class="searchColor"></div>
-                            <form action="" method="post">
-                                <input type="text" name="s" placeholder="Search..." class="searchInput" autocomplete="off" disabled="disabled" />
-                            </form>
-                        </div>
                         <div class="mdui-divider control-border" style="margin-bottom: 30px !important;"></div>
                         <div class="mdui-typo">
 

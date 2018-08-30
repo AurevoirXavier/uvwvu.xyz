@@ -16,31 +16,6 @@ function reload() {
         })
     });
 
-    switchNowSearch = 0;
-    searBtn = $('.searchBtn');
-    searBtn.click(function () {
-        if (switchNow == 0){
-            animateFor('.searchColor','searchOut','searchIN');
-            $('.searchInput').animate({opacity : '1'},300,function () {
-                searBtn.animate({opacity:'0'},120,function () {
-                    searBtn.find('i').text('close');
-                });
-                searBtn.animate({opacity:'1'},200);
-                $('.searchInput').attr('disabled',false);
-            });
-            switchNow = 1;
-        }else {
-            animateFor('.searchColor','searchIN','searchOut');
-            $('.searchInput').animate({opacity : '0'},680,function () {
-                searBtn.animate({opacity:'0'},120,function () {
-                    searBtn.find('i').text('search');
-                });
-                searBtn.animate({opacity:'1'},200);
-                $('.searchInput').attr('disabled',true);
-            });
-            switchNow = 0;
-        }
-    });
     vMenu = 0;
     $('.vMenu-onBtn').click(function () {
         if (vMenu == 0){
