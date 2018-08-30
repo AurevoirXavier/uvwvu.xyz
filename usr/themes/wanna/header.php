@@ -38,11 +38,6 @@
         </li>
     </ul>
     <ul class="header-tab-1 header-tab-2" >
-        <li>
-            <form action="" method="post">
-                <input type="text" name="s" placeholder="Search..." class="searchInput" autocomplete="off" />
-            </form>
-        </li>
         <?php if($this->user->hasLogin()): ?>
                     <li><a href="<?php $this->options->adminUrl(); ?>">Welcome, <?php $this->user->screenName(); ?></a></li>
         <?php else: ?>
