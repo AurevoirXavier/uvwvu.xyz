@@ -612,11 +612,11 @@ header {
 }
 .sibi {
     margin: 20px 0;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     min-height: 200px;
     padding: 12px;
+    padding-bottom: 36px;
     box-sizing: border-box;
-    padding-bottom: 120px;
     background: white;
     color: gray;
     position: relative;
