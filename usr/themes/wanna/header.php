@@ -29,16 +29,18 @@
             </a>
         </li>
         <li class="mobie-head-search justCenter">
-            <form action="" method="post">
-                <input type="text" name="s" placeholder="Search..." class="searchInput" autocomplete="off" disabled="disabled" />
-            </form>
+                <form class="m-s-input" action="" method="post">
+                    <input type="text" name="s" placeholder="Search..." />
+                    <button class="justCenter btnclearDcss">
+                        <i class="mdui-icon material-icons" style="font-size: 22px;color: gray;">search</i>
+                    </button>
+                </form>
         </li>
     </ul>
     <ul class="header-tab-1 header-tab-2" >
         <li>
-            <form style="height: 100%">
-                <input type="text" style="display:none">
-                <input type="text" autocomplete="off" name="s" placeholder="回车进行搜索" id="search" />
+            <form action="" method="post">
+                <input type="text" name="s" placeholder="Search..." class="searchInput" autocomplete="off" disabled="disabled" />
             </form>
         </li>
         <?php if($this->user->hasLogin()): ?>
