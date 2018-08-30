@@ -11,17 +11,25 @@ if(is_array($_GET)&&count($_GET)>0)
     $(document).ready(function () {
         replyId = $('#comment-'+"<?php echo $ac; ?>");
         replyName =  replyId.find('.name:first > a').text();
-        replyCon =  replyId.find('.userBB-Content:first > p').text();
-        if (replyCon.length > 36) {
-            replyCon = replyCon.substring(0, 35) + '...';
-        }
         if (replyId !== ''){
             $('.replyId').fadeIn();
-            $('.replyCon').text('"'+replyCon+'"');
-            if (replyName !== '') {
+            if (replyName) {
                 $('.reply-name').text(replyName);
+                replyCon =  replyId.find('.userBB-Content:first > p').text();
+                if (replyCon.length > 36) {
+                    replyCon = replyCon.substring(0, 35) + '...';
+                }
+                $('.replyCon').text('"'+replyCon+'"');
             } else {
-                $('.reply-name').text(replyId.find('.name:first').text());
+                replyName = replyId.find('.name:first').text()
+                if (replyName) {
+                    $('.reply-name').text(replyName);
+                    replyCon =  replyId.find('.userBB-Content:first > p').text();
+                    if (replyCon.length > 36) {
+                        replyCon = replyCon.substring(0, 35) + '...';
+                    }
+                $('.replyCon').text('"'+replyCon+'"');
+                }
             }
         } else {
             $('.replyId').css({
