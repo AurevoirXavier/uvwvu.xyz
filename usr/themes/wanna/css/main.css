@@ -399,10 +399,6 @@ header {
     100% {width: 100%;border-radius: 5px}
 }
 
-.control-border {
-    width: 80%;
-    margin: 8px auto !important;
-}
 .sortBy {
     display: flex;
     position: relative;
@@ -1287,9 +1283,6 @@ header {
     }
 
     .search {
-        display: none;
-    }
-    .control-border {
         display: none;
     }
     .mobie-head-search {

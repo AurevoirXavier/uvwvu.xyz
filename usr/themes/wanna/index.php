@@ -78,9 +78,7 @@ $this->need('header.php');
             <div class="right-pageTagMenu mdui-col-md-3">
                 <div class="vBox">
                     <div class="control shadow-2">
-                        <div class="mdui-divider control-border" style="margin-bottom: 30px !important;"></div>
                         <div class="mdui-typo">
-
                             <div class="sortBy">
                                 <div>
                                     <i class="fa fa-map-marker"></i>
