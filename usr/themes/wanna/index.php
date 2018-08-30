@@ -84,7 +84,7 @@ $this->need('header.php');
                             </div>
                             <div class="searchColor"></div>
                             <form action="" method="post">
-                                <input type="text" name="s" placeholder="Search..." class="searchInput" autocomplete="off" disabled="disabled" />
+                                <input type="text" name="s" placeholder="Search..." class="searchInput" autocomplete="off" />
                             </form>
                         </div>
                         <div class="mdui-divider control-border" style="margin-bottom: 30px !important;"></div>
