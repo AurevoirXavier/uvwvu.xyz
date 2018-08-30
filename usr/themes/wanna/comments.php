@@ -80,22 +80,6 @@ if(is_array($_GET)&&count($_GET)>0)
                     <?php endif; ?>
                 </ul>
             </div>
-            <h4>文章留名</h4>
-            <div class="visitor">
-                <?php while($comments->next()): ?>
-                <div style="display: inline-block">
-                    <?php $comments->gravatar('45', ''); ?>
-                    <div class="visitorName">
-                        <?php $comments->author(); ?>
-                    </div>
-                </div>
-                <?php endwhile; ?>
-            </div>
-            <script>
-                $('.visitor > div').mouseover(function () {
-                    $(this).attr('title',$(this).find('.visitorName').text());
-                })
-            </script>
         </div>
     </div>
     <?php function threadedComments($comments, $options) {
