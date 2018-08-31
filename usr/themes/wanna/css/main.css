@@ -733,11 +733,11 @@ header {
     width: 100%;
     line-height: 40px;
     /* text-decoration: none; */
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     /* color: gray; */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
 }
 .userBB {
     width: 100%;
