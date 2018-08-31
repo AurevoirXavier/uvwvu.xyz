@@ -731,7 +731,7 @@ header {
 .nextPrev a {
     position: relative;
     display: inline-block;
-    width: 100%;
+    /* width: 100%; */
     line-height: 40px;
     letter-spacing: 1px;
     color: royalblue;
