@@ -729,6 +729,7 @@ header {
     font-size: 22px;
 }
 .nextPrev > div > a {
+    position: relative;
     display: inline-block;
     width: 100%;
     line-height: 40px;
@@ -739,6 +740,8 @@ header {
     white-space: nowrap;
 }
 .nextPrev > div > a:hover {
+    position: absolute;
+    display: inline-block;
     text-decoration: underline;
     -webkit-transition: all .2s;
     transition: all .2s;
