@@ -728,7 +728,7 @@ header {
 .nextPrev > div > i {
     font-size: 22px;
 }
-.nextPrev a {
+.nextPrev > div > a {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -739,22 +739,9 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.nextPrev a:before {
-    position: absolute;
-    top: auto;
-    bottom: 1px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    content: ' ';
-    background-color: #ff4081;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
+.nextPrev > div > a:hover::before, a:hover::after { position: absolute; }
+.nextPrev > div > a:hover::before { content: "\5B"; left: -20px; }
+.nextPrev > div > a:hover::after { content: "\5D"; right:  -20px; }
 .userBB {
     width: 100%;
     position: relative;
