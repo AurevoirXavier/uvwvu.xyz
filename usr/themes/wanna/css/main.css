@@ -729,13 +729,25 @@ header {
     font-size: 22px;
 }
 .nextPrev > div > a {
+    position: relative;
+    display: inline-block;
     width: 100%;
     line-height: 40px;
     letter-spacing: 1px;
-    color: goldenrod;
+    color: royalblue;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.nextPrev > div > a {
+    position: absolute;
+    background-color: royalblue;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .userBB {
     width: 100%;
