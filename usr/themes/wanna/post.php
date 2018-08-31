@@ -39,7 +39,7 @@
                         <i class="mdui-icon material-icons" style="font-size: 18px">favorite</i> FAVORITE
                 </div>
                 <div class="mdui-divider"></div>
-                <div class="nextPrev">
+                <div class="mudi-typo nextPrev">
                     <div>
                         <i class="mdui-icon material-icons">chevron_left</i>
                         <?php $this->theNext('%s','<a>End</a>'); ?>
