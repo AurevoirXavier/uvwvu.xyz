@@ -741,7 +741,7 @@ header {
     white-space: nowrap;
 }
 .nextPrev > div > div > a:hover::before, .nextPrev > div > div > a:hover::after { 
-    position: absolute;
+    position: relative;
  }
 .nextPrev > div > div > a:hover::before { 
     content: "\5B";
