@@ -741,6 +741,7 @@ header {
 }
 .nextPrev > div > a::before,
 .nextPrev > div > a::after {
+    cursor: pointer;
     position: relative;
 	display: inline-block;
 	opacity: 0;
@@ -766,6 +767,7 @@ header {
 .nextPrev > div > a:hover::after,
 .nextPrev > div > a:focus::before,
 .nextPrev > div > a:focus::after {
+    cursor: pointer;
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
