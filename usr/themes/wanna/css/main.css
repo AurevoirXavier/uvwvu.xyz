@@ -738,7 +738,7 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.nextPrev > div > a:hover::before, .nextPrev > div > div > a:hover::after { 
+.nextPrev > div > a:hover::before, .nextPrev > div > a:hover::after { 
     position: relative;
  }
 .nextPrev > div > a:hover::before { 
