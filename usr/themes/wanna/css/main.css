@@ -732,15 +732,12 @@ header {
     display: inline-block;
     width: 100%;
     line-height: 40px;
-    text-decoration: none;
+    /* text-decoration: none; */
     letter-spacing: 1px;
-    color: deeppink;
+    /* color: gray; */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-.nextPrev > div > a:hover {
-    text-decoration: underline;
 }
 .userBB {
     width: 100%;
