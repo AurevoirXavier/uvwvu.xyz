@@ -4,9 +4,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form) {
     $bgUrl = new Typecho_Widget_Helper_Form_Element_Text('bgUrl', NULL, NULL, _t('主题背景图片'), _t('填入外部链接来更新背景图片 , 默认使用 bg.jpg'));
     $form->addInput($bgUrl);
-    
-    $hIcon = new Typecho_Widget_Helper_Form_Element_Text('hIcon', NULL, NULL, _t('顶栏logo'), _t('填入外部链接来更新顶栏logo , 不填写则不会出现'));
-    $form->addInput($hIcon);
 
     $logo = new Typecho_Widget_Helper_Form_Element_Text('logo', NULL, NULL, _t('侧边栏Logo'), _t('填入外部链接来更新Logo'));
     $form->addInput($logo);
