@@ -738,7 +738,7 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.nextPrev > div > a::before {
+.nextPrev > div > a:hover {
     text-decoration: underline;
     -webkit-transition: all .2s;
     transition: all .2s;
