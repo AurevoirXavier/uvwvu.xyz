@@ -734,10 +734,13 @@ header {
     line-height: 40px;
     text-decoration: none;
     letter-spacing: 1px;
-    color: gray;
+    color: deeppink;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.nextPrev > div > a:hover {
+    text-decoration: underline;
 }
 .userBB {
     width: 100%;
