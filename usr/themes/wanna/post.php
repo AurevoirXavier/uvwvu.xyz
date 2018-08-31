@@ -45,7 +45,7 @@
                         <?php $this->theNext('%s','<a>End</a>'); ?>
                     </div>
                     <span id='theFlexBor'></span>
-                    <div>
+                    <div class="mudi-typo">
                         <?php $this->thePrev('%s','<a>End</a>'); ?>
                         <i class="mdui-icon material-icons">chevron_right</i>
                     </div>

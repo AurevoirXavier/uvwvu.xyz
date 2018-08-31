@@ -729,12 +729,10 @@ header {
     font-size: 22px;
 }
 .nextPrev > div > a {
-    position: relative;
-    display: inline-block;
     width: 100%;
     line-height: 40px;
     letter-spacing: 1px;
-    color: firebrick;
+    color: goldenrod;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
