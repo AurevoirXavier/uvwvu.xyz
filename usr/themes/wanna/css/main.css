@@ -731,6 +731,8 @@ header {
 .nextPrev > div > div {
     display: inline-block;
     width: 100%;
+}
+.nextPrev > div > div > a {
     line-height: 40px;
     letter-spacing: 1px;
     color: royalblue;
