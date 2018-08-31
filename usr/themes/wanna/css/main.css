@@ -741,6 +741,12 @@ header {
 }
 .nextPrev > div > a {
     position: absolute;
+    top: auto;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: ' ';
     background-color: royalblue;
     -webkit-transition: all .2s;
     transition: all .2s;
