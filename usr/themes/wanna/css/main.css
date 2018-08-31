@@ -741,12 +741,19 @@ header {
 }
 .nextPrev > div > a:hover {
     position: absolute;
-    display: inline-block;
-    text-decoration: underline;
+    top: auto;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: ' ';
+    background-color: #ff4081;
     -webkit-transition: all .2s;
     transition: all .2s;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .userBB {
     width: 100%;
