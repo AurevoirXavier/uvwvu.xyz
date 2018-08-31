@@ -728,7 +728,7 @@ header {
 .nextPrev > div > i {
     font-size: 22px;
 }
-.pNarticle {
+.nextPrev > div > a {
     display: inline-block;
     width: 100%;
     line-height: 40px;
