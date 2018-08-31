@@ -730,7 +730,6 @@ header {
 }
 .nextPrev > div > a {
     position: relative;
-    text-decoration: none;
     display: inline-block;
     width: 100%;
     line-height: 40px;
