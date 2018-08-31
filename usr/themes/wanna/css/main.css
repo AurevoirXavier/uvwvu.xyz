@@ -739,25 +739,37 @@ header {
     white-space: nowrap;
     cursor: pointer;
 }
-.nextPrev > div > a::before, .nextPrev > div > a::after { 
+.nextPrev > div > a::before,
+.nextPrev > div > a::after {
     position: relative;
-    display: inline-block;
-    opacity: 0;
- }
-.nextPrev > div > a::before { 
-    content: "\5B";
-    left: -10px;
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
 }
-.nextPrev > div > a::after { 
-    content: "\5D";
-    right:  -10px; 
+.nextPrev > div > a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	transform: translateX(10px);
 }
-.nextPrev > div > a:hover::before, .nextPrev > div > a:hover::after {
-    transition: all .2s;
-    -webkit-transition: all .2s;
-    transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    opacity: 1;
+.nextPrev > div > a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+.nextPrev > div > a:hover::before,
+.nextPrev > div > a:hover::after,
+.nextPrev > div > a:focus::before,
+.nextPrev > div > a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
 }
 .userBB {
     width: 100%;
