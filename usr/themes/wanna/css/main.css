@@ -739,7 +739,7 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.nextPrev > div > a:hover {
+.nextPrev > div > a::before {
     position: absolute;
     top: auto;
     bottom: 1px;
