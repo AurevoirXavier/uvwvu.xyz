@@ -740,6 +740,12 @@ header {
 }
 .nextPrev > div > a:hover::before, .nextPrev > div > a:hover::after { 
     position: relative;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
  }
 .nextPrev > div > a:hover::before { 
     content: "\5B";
