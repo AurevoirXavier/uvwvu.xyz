@@ -728,7 +728,7 @@ header {
 .nextPrev > div > i {
     font-size: 22px;
 }
-.nextPrev > div > a {
+.nextPrev a {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -739,7 +739,7 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.nextPrev > div > a:before {
+.nextPrev a:before {
     position: absolute;
     top: auto;
     bottom: 1px;
