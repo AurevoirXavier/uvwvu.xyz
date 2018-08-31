@@ -737,7 +737,6 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    cursor: default;
 }
 .nextPrev > div > a::before,
 .nextPrev > div > a::after {
