@@ -728,7 +728,7 @@ header {
 .nextPrev > div > i {
     font-size: 22px;
 }
-.nextPrev > a {
+.nextPrev a {
     position: relative;
     display: inline-block;
     width: 100%;
