@@ -42,11 +42,15 @@
                 <div class="nextPrev">
                     <div>
                         <i class="mdui-icon material-icons">chevron_left</i>
-                        <?php $this->theNext('%s','<a>End</a>'); ?>
+                        <div>
+                            <?php $this->theNext('%s','<a>End</a>'); ?>
+                        </div>
                     </div>
                     <span id='theFlexBor'></span>
                     <div>
-                        <?php $this->thePrev('%s','<a>End</a>'); ?>
+                        <div>
+                            <?php $this->thePrev('%s','<a>End</a>'); ?>
+                        </div>
                         <i class="mdui-icon material-icons">chevron_right</i>
                     </div>
                 </div>
