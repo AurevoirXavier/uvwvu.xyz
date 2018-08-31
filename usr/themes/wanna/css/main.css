@@ -744,7 +744,7 @@ header {
     display: inline-block;
     opacity: 0;
  }
- .nextPrev > div > a::before { 
+.nextPrev > div > a::before { 
     content: "\5B";
     left: -10px;
 }
