@@ -731,13 +731,13 @@ header {
 .nextPrev > div > a {
     position: relative;
     display: inline-block;
-    /* width: 100%; */
-    /* line-height: 40px; */
+    width: 100%;
+    line-height: 40px;
     letter-spacing: 1px;
     color: royalblue;
     overflow: hidden;
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
     outline: 0;
 }
 .nextPrev > div > a::before {
