@@ -43,13 +43,13 @@
                     <div>
                         <i class="mdui-icon material-icons">chevron_left</i>
                         <!-- <div> -->
-                            <?php $this->theNext('%s','<a>End</a>'); ?>
+                            <?php $this->theNext('%s','<a class="pNarticle">End</a>'); ?>
                         <!-- </div> -->
                     </div>
                     <span id='theFlexBor'></span>
                     <div>
                         <!-- <div> -->
-                            <?php $this->thePrev('%s','<a>End</a>'); ?>
+                            <?php $this->thePrev('%s','<a class="pNarticle">End</a>'); ?>
                         <!-- </div> -->
                         <i class="mdui-icon material-icons">chevron_right</i>
                     </div>

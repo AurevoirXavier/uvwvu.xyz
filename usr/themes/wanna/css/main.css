@@ -728,7 +728,7 @@ header {
 .nextPrev > div > i {
     font-size: 22px;
 }
-.nextPrev > div > a {
+.pNarticle {
     display: inline-block;
     width: 100%;
     line-height: 40px;
@@ -737,20 +737,27 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    cursor: pointer;
 }
-.nextPrev > div > a:hover::before, .nextPrev > div > a:hover::after { 
+.pNarticle::before, .pNarticle::after { 
     position: relative;
-    width: 100%;
-    -webkit-transition: all 3s;
-    transition: all 3s;
+    display: inline-block;
+    opacity: 0;
  }
-.nextPrev > div > a:hover::before { 
+.pNarticle::before { 
     content: "\5B";
     left: -10px;
 }
-.nextPrev > div > a:hover::after { 
+.pNarticle::after { 
     content: "\5D";
     right:  -10px; 
+}
+.pNarticle:hover::before, .pNarticle:hover::after {
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    opacity: 1;
 }
 /* .nextPrev > div > div {
     display: inline-block;
