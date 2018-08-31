@@ -729,7 +729,6 @@ header {
     font-size: 22px;
 }
 .nextPrev > div > a {
-    position: relative;
     display: inline-block;
     width: 100%;
     line-height: 40px;
@@ -738,23 +737,13 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    outline: 0;
 }
 .nextPrev > div > a::before {
-    position: absolute;
-    top: auto;
-    bottom: 1px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    content: ' ';
-    background-color: royalblue;
+    text-decoration: underline;
     -webkit-transition: all .2s;
     transition: all .2s;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 .userBB {
     width: 100%;
