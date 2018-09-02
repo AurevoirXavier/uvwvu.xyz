@@ -89,7 +89,7 @@ if(is_array($_GET)&&count($_GET)>0)
                 <nav class="tags-list">
                     <?php while ($tags->next()):
                         // echo "<a href=\"" . $tags->permalink() . "\">" . $tags->name() . "</a>"; 
-                        echo $tags->name();
+                        echo $tags->permalink();
                     endwhile; ?>
                     <?php else: ?>
                         <a><?php _e('No labels yet'); ?></a>
