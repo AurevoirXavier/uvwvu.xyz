@@ -867,6 +867,7 @@ header {
     padding-left: 0 !important;
 }
 .tags-list a {
+    height: 40px;
     line-height: 1;
 }
 .tags-list a span {
@@ -892,9 +893,9 @@ header {
 }
 .tags-list a:hover span,
 .tags-list a:focus span {
-	-webkit-transform: translateY(-120%);
-	-moz-transform: translateY(-120%);
-	transform: translateY(-120%);
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 /* animate */
 .controlBtnSS {
