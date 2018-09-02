@@ -869,7 +869,8 @@ header {
 .tags-list a {
 	overflow: hidden;
 	padding: 0 4px;
-	height: 1em;
+    height: 1em;
+    line-height: 40px;
 }
 .tags-list a span {
 	position: relative;
