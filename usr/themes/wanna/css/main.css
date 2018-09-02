@@ -866,14 +866,13 @@ header {
 .tags-list {
     padding-left: 0 !important;
 }
-.tags-list0 a {
+.tags-list a {
 	line-height: 2em;
 	-webkit-perspective: 800px;
 	-moz-perspective: 800px;
 	perspective: 800px;
 }
-
-.tags-list0 a span {
+.tags-list a span {
 	position: relative;
 	display: inline-block;
 	padding: 3px 15px 0;
@@ -892,8 +891,7 @@ header {
 	-moz-transform-origin: 0% 50%;
 	transform-origin: 0% 50%;
 }
-
-.tags-list0 a span::before {
+.tags-list a span::before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -913,14 +911,12 @@ header {
 	transform-origin: 0 0;
 	pointer-events: none;
 }
-
-.tags-list0 a:hover span,
-.tags-list0 a:focus span {
+.tags-list a:hover span,
+.tags-list a:focus span {
 	background: #2f4351;
 }
-
-.tags-list0 a:hover span::before,
-.tags-list0 a:focus span::before {
+.tags-list a:hover span::before,
+.tags-list a:focus span::before {
 	-webkit-transform: rotateX(10deg);	
 	-moz-transform: rotateX(10deg);
 	transform: rotateX(10deg);
