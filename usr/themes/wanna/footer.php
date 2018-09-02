@@ -4,7 +4,7 @@
     <div class="mdui-row">
         <div class="mdui-col-md-4">
             <p>Powered by <a href="//uvwvu.xyz">AurevoirXavier</a></p>
-            <p>Secondary exploration of <a href="http://icry.info/">Wanna</a></p>
+            <p>Secondary exploration of <a href="https://github.com/touchitvoid/wanna">Wanna</a></p>
         </div>
         <div class="mdui-col-md-4">
             <div id="yy520"></div>
