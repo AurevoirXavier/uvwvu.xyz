@@ -871,6 +871,7 @@ header {
 }
 .tags-list a::before,
 .tags-list a::after  {
+    background: none;
 	position: absolute;
 	top: 0;
 	left: 0;
