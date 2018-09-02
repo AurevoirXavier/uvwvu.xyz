@@ -88,11 +88,7 @@ if(is_array($_GET)&&count($_GET)>0)
                 <?php if($tags->have()): ?>
                 <nav class="tags-list">
                     <?php while ($tags->next()): ?>
-                        <a href="<?php $tags->permalink(); ?>">
-                            <span data-hover="<?php $tags->name(); ?>">
-                                <?php $tags->name(); ?>
-                            </span>
-                        </a>
+                        <a href="<?php $tags->permalink(); ?>"><?php $tags->name(); ?></a>
                     <?php endwhile; ?>
                     <?php else: ?>
                         <?php _e('No labels yet'); ?>

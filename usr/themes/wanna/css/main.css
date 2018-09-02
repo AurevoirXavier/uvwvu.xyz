@@ -865,63 +865,43 @@ header {
 }
 .tags-list {
     padding-left: 0 !important;
-    background-color: #435a6b;
 }
 .tags-list a {
-    margin-left: 20px;
-	line-height: 2em;
-	-webkit-perspective: 800px;
-	-moz-perspective: 800px;
-	perspective: 800px;
+	padding: 10px 20px;
 }
-.tags-list a span {
-	position: relative;
-	display: inline-block;
-	padding: 3px 15px 0;
-	background: #587285;
-	box-shadow: inset 0 3px #2f4351;
-	-webkit-transition: background 0.6s;
-	-moz-transition: background 0.6s;
-	transition: background 0.6s;
-	-webkit-transform-origin: 50% 0;
-	-moz-transform-origin: 50% 0;
-	transform-origin: 50% 0;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transform-origin: 0% 50%;
-	-moz-transform-origin: 0% 50%;
-	transform-origin: 0% 50%;
-}
-.tags-list a span::before {
+.tags-list a::before,
+.tags-list a::after  {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
-	color: #2f4351;
-	content: attr(data-hover);
-	-webkit-transform: rotateX(270deg);
-	-moz-transform: rotateX(270deg);
-	transform: rotateX(270deg);
-	-webkit-transition: -webkit-transform 0.6s;
-	-moz-transition: -moz-transform 0.6s;
-	transition: transform 0.6s;
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	transform-origin: 0 0;
-	pointer-events: none;
+	border: 3px solid #354856;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
 }
-.tags-list a:hover span,
-.tags-list a:focus span {
-	background: #2f4351;
+.tags-list a::after  {
+	border-color: red;
+	opacity: 0;
+	-webkit-transform: translateY(-7px) translateX(6px);
+	-moz-transform: translateY(-7px) translateX(6px);
+	transform: translateY(-7px) translateX(6px);
 }
-.tags-list a:hover span::before,
-.tags-list a:focus span::before {
-	-webkit-transform: rotateX(10deg);	
-	-moz-transform: rotateX(10deg);
-	transform: rotateX(10deg);
+.tags-list a:hover::before,
+.tags-list a:focus::before {
+	opacity: 0;
+	-webkit-transform: translateY(5px) translateX(-5px);
+	-moz-transform: translateY(5px) translateX(-5px);
+	transform: translateY(5px) translateX(-5px);
+}
+.tags-list a:hover::after,
+.tags-list a:focus::after  {
+	opacity: 1;
+	-webkit-transform: translateY(0px) translateX(0px);
+	-moz-transform: translateY(0px) translateX(0px);
+	transform: translateY(0px) translateX(0px);
 }
 /* animate */
 .controlBtnSS {
