@@ -868,20 +868,17 @@ header {
 }
 .tags-list a {
     float: left;
+    line-height: 44px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
 }
 .tags-list a span {
-    color: white !important;
-    font-size: 12px;
-    list-style: none;
-    display: inline-block;
-    padding: 0 16px;
-    border-radius: 3px;
-    /* background: #97a1e2; */
-    margin-right: 5px;
-    /* box-shadow: 0 2px 6px -1px rgba(0,0,0,.2); */
-    /* transition: all .5s; */
-    /* will-change: transform; */
-    -webkit-transition: -webkit-transform 0.3s;
+    position: relative;
+	display: inline-block;
+	padding: 0 14px;
+	background: #2195de;
+	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
 	-webkit-transform-origin: 50% 0;
