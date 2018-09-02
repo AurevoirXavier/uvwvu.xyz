@@ -28,7 +28,7 @@ if(is_array($_GET)&&count($_GET)>0)
                     if (replyCon.length > 36) {
                         replyCon = replyCon.substring(0, 35) + '...';
                     }
-                $('.replyCon').text('  "'+replyCon+'"');
+                $('.replyCon').text(', "'+replyCon+'"');
                 }
             }
         } else {
