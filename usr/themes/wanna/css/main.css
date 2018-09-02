@@ -869,9 +869,9 @@ header {
 .tags-list a {
     line-height: 1;
     margin-right: 5px;
+    font-size: 1.35em;
 }
 .tags-list a span {
-    color: white !important;
 	position: relative;
 	display: inline-block;
 	-webkit-transition: -webkit-transform 0.3s;
