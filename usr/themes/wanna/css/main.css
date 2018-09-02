@@ -868,7 +868,9 @@ header {
 }
 .tags-list a {
     line-height: 1;
-    border: 1px solid black;
+    border-top: 2px solid deeppink;
+    border-left: 2px dotted deeppink;
+    border-right: 2px dotted deeppink;
     margin-right: 5px;
 }
 .tags-list a span {
