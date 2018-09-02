@@ -23,12 +23,12 @@ if(is_array($_GET)&&count($_GET)>0)
             } else {
                 replyName = replyId.find('.name:first').text()
                 if (replyName) {
-                    $('.reply-name').text(replyName);
+                    $('.reply-name').text(replyName+', ');
                     replyCon =  replyId.find('.userBB-Content:first > p').text();
                     if (replyCon.length > 36) {
                         replyCon = replyCon.substring(0, 35) + '...';
                     }
-                $('.replyCon').text(', "'+replyCon+'"');
+                $('.replyCon').text('"'+replyCon+'"');
                 }
             }
         } else {
