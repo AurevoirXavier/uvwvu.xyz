@@ -868,12 +868,10 @@ header {
 }
 .tags-list a {
     line-height: 1;
-    border-top: 1px solid deeppink;
     margin-right: 5px;
 }
 .tags-list a span {
     color: white !important;
-    background: deeppink;
 	position: relative;
 	display: inline-block;
 	-webkit-transition: -webkit-transform 0.3s;
