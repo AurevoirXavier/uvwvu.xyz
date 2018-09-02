@@ -52,7 +52,7 @@ if(is_array($_GET)&&count($_GET)>0)
                 <?php if($this->user->hasLogin()): ?>
                     <div style="float: right"><?php _e('From: '); ?><?php $this->user->screenName(); ?>. &nbsp<a style="display: initial" href="<?php $this->options->logoutUrl(); ?>" title="Sign out"><?php _e('Sign out'); ?> &raquo; </a></div>
                 <?php else: ?>
-                    <a class="smallSize" href="<?php $this->options->adminUrl(); ?>">Sign in</a>
+                    <a style="float: right" href="<?php $this->options->adminUrl(); ?>">Sign in</a>
                     <div class="userIC">
                         <div class="mdui-col-xs-12 mdui-col-md-3 getData-input" id="userName">
                             <input type="text" placeholder="Name" name="author" value="<?php $this->remember('author'); ?>" required />
