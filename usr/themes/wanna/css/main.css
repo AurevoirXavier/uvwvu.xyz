@@ -869,11 +869,10 @@ header {
 .tags-list a {
     line-height: 1;
     margin-right: 5px;
-    border-radius: 5px;
-    background: #97a1e2;
 }
 .tags-list a span {
     color: white !important;
+    background: #97a1e2;
 	position: relative;
 	display: inline-block;
 	-webkit-transition: -webkit-transform 0.3s;
