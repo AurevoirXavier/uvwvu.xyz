@@ -871,6 +871,7 @@ header {
 	padding: 0 4px;
 }
 .tags-list a span {
+    color: #587285;
 	position: relative;
 	display: inline-block;
 	-webkit-transition: -webkit-transform 0.3s;
@@ -878,7 +879,7 @@ header {
 	transition: transform 0.3s;
 }
 .tags-list a span::before {
-    background-color: deeppink;
+    color: deeppink;
 	position: absolute;
 	top: 100%;
 	content: attr(data-hover);
