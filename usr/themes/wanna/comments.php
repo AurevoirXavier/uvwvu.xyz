@@ -82,7 +82,7 @@ if(is_array($_GET)&&count($_GET)>0)
             <?php $comments->listComments(); ?>
         </div>
         <div class="mdui-col-md-4 comTool">
-            <h4>Tags</h4>
+            <h4>Labels</h4>
             <div class="tags">
                 <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=30')->to($tags); ?>
                 <?php if($tags->have()): ?>
@@ -91,7 +91,7 @@ if(is_array($_GET)&&count($_GET)>0)
                         <li class="mdui-ripple"><a href="<?php $tags->permalink(); ?>" rel="tag" class="size-<?php $tags->split(5, 10, 20, 30); ?>" title="There are <?php $tags->count(); ?> topics"><?php $tags->name(); ?></a></li>
                     <?php endwhile; ?>
                     <?php else: ?>
-                        <li><?php _e('No tags yet'); ?></li>
+                        <li><?php _e('No labels yet'); ?></li>
                     <?php endif; ?>
                 </ul>
             </div>
