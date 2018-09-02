@@ -878,7 +878,7 @@ header {
 	transition: transform 0.3s;
 }
 .tags-list a span::before {
-    color: deeppink;
+    background-color: deeppink;
 	position: absolute;
 	top: 100%;
 	content: attr(data-hover);
