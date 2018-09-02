@@ -867,29 +867,31 @@ header {
     padding-left: 0 !important;
 }
 .tags-list a {
-	padding: 10px 0;
-	border-top: 2px solid #0972b4;
-	color: #0972b4;
-	text-shadow: none;
-} 
-.tags-list a::before {
-	position: absolute;
-	top: 0;
-	left: 0;
 	overflow: hidden;
-	padding: 10px 0;
-	max-width: 0;
-	border-bottom: 2px solid #fff;
-	color: #fff;
-	content: attr(data-hover);
-	-webkit-transition: max-width 0.5s;
-	-moz-transition: max-width 0.5s;
-	transition: max-width 0.5s;
-	white-space: nowrap;
+	padding: 0 4px;
+	height: 1em;
 }
-.tags-list a:hover::before,
-.tags-list a:focus::before {
-	max-width: 100%;
+.tags-list a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+.tags-list a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.tags-list a:hover span,
+.tags-list a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 /* animate */
 .controlBtnSS {

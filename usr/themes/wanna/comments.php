@@ -87,11 +87,15 @@ if(is_array($_GET)&&count($_GET)>0)
                 <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=30')->to($tags); ?>
                 <?php if($tags->have()): ?>
                 <nav class="tags-list">
-                    <?php while ($tags->next()):
-                        echo "<a href=\"#\">" . $tags->name() . "</a>"; 
-                    endwhile; ?>
+                    <?php while ($tags->next()): ?>
+                        <a href="<?php $tags->permalink(); ?>">
+                            <span data-hover="<?php $tags->name(); ?>">
+                                <?php $tags->name(); ?>
+                            </span>
+                        </a>
+                    <?php endwhile; ?>
                     <?php else: ?>
-                        <a><?php _e('No labels yet'); ?></a>
+                        <?php _e('No labels yet'); ?>
                     <?php endif; ?>
                 </nav>
             </div>
