@@ -881,6 +881,7 @@ header {
 	transition: transform 0.3s;
 }
 .tags-list a span::before {
+    color: deeppink;
 	position: absolute;
 	top: 100%;
 	content: attr(data-hover);
@@ -891,9 +892,9 @@ header {
 }
 .tags-list a:hover span,
 .tags-list a:focus span {
-	-webkit-transform: translateY(-100%);
-	-moz-transform: translateY(-100%);
-	transform: translateY(-100%);
+	-webkit-transform: translateY(-120%);
+	-moz-transform: translateY(-120%);
+	transform: translateY(-120%);
 }
 /* animate */
 .controlBtnSS {
