@@ -53,7 +53,7 @@ if(is_array($_GET)&&count($_GET)>0)
                 <a href="<?php $this->options->adminUrl(); ?>">Sign in to </a>
                 <?php $reply = "reply to: "; ?>
             <?php endif; ?>
-            <div class="replyId" id="replyId" style="float: left"><?php echo $reply; ?><span class="reply-name"><?php echo $this->author->name();?></span>&nbsp&nbsp<span class="replyCon" style="background-color: rgb(235, 235, 235)"></span></div>
+            <div class="replyId" id="replyId" style="float: left">111<span class="reply-name"><?php echo $this->author->name();?></span>&nbsp&nbsp<span class="replyCon" style="background-color: rgb(235, 235, 235)"></span></div>
                 <?php if($this->user->hasLogin()): ?>
                     <div style="float: right"><?php _e('From: '); ?><?php $this->user->screenName(); ?>. &nbsp<a style="display: initial" href="<?php $this->options->logoutUrl(); ?>" title="Sign out"><?php _e('Sign out'); ?> &raquo; </a></div>
                 <?php else: ?>
