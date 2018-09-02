@@ -873,6 +873,7 @@ header {
 .tags-list a span {
     color: white !important;
     background: #97a1e2;
+    border: black 2px;
 	position: relative;
 	display: inline-block;
 	-webkit-transition: -webkit-transform 0.3s;
