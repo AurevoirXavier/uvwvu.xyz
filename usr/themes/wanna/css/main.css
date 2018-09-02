@@ -866,10 +866,10 @@ header {
 .tags-list {
     padding-left: 0 !important;
 }
-.tags-list > li {
+.tags-list > a {
     float: left;
 }
-.tags-list a {
+.tags-list > a > span {
     color: white !important;
     font-size: 12px;
     list-style: none;

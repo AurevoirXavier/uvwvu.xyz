@@ -86,14 +86,18 @@ if(is_array($_GET)&&count($_GET)>0)
             <div class="tags">
                 <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=30')->to($tags); ?>
                 <?php if($tags->have()): ?>
-                <ul class="tags-list">
+                <nav class="tags-list">
                     <?php while ($tags->next()): ?>
-                        <li class="mdui-ripple"><a href="<?php $tags->permalink(); ?>" rel="tag" class="size-<?php $tags->split(5, 10, 20, 30); ?>" title="There are <?php $tags->count(); ?> topics"><?php $tags->name(); ?></a></li>
+                        <a href="<?php $tags->permalink(); ?>">
+                            <span data-hover="<?php $tags->name(); ?>">
+                                <?php $tags->name(); ?>
+                            </span>
+                        </a>
                     <?php endwhile; ?>
                     <?php else: ?>
-                        <li><?php _e('No labels yet'); ?></li>
+                        <?php _e('No labels yet'); ?>
                     <?php endif; ?>
-                </ul>
+                </nav>
             </div>
         </div>
     </div>
