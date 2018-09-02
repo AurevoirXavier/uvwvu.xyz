@@ -866,7 +866,7 @@ header {
 .tags-list {
     padding-left: 0 !important;
 }
-.tags-list li {
+.tags-list > li {
     float: left;
 }
 .tags-list a {
