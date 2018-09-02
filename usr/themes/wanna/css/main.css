@@ -868,7 +868,7 @@ header {
 }
 .tags-list a {
     line-height: 1;
-    border: black 5px;
+    border: 1px solid black;
     margin-right: 5px;
 }
 .tags-list a span {
