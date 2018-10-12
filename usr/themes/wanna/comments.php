@@ -47,7 +47,11 @@ if(is_array($_GET)&&count($_GET)>0)
     </div>
     <div class="newBB mdui-row">
         <div class="mdui-row">
+        <?php if($this->allow('comment')): ?>
             <form method="post" action="<?php $this->commentUrl() ?>" style="width: 100%" role="form" id="comment_form">
+        <?php else: ?>
+            <form style="width: 100%">
+        <?php endif; ?>
             <div class="replyId" id="replyId" style="float: left">To: <span class="reply-name"><?php echo $this->author->name();?></span><span class="replyCon" style="background-color: rgb(235, 235, 235)"></span></div>
                 <?php if($this->user->hasLogin()): ?>
                     <div style="float: right"><?php _e('From: '); ?><?php $this->user->screenName(); ?>. &nbsp<a style="display: initial" href="<?php $this->options->logoutUrl(); ?>" title="Sign out"><?php _e('Sign out'); ?> &raquo; </a></div>
@@ -69,13 +73,14 @@ if(is_array($_GET)&&count($_GET)>0)
                     <textarea name="text" id="textarea" class="textarea" placeholder="Content..." required ><?php $this->remember('text'); ?></textarea>
                 </div>
                 <div class="mdui-col-xs-12 mdui-col-md-2" id="subBtn">
+                <?php if($this->allow('comment')): ?>
                     <button class="mdui-ripple" type="submit">Submit</button>
+                <?php else: ?>
+                    <h3><?php _e('Author do not allow to comment'); ?></h3>
+                <?php endif; ?>
                 </div>
             </form>
         </div>
-        <?php else: ?>
-            <h3><?php _e('Author do not allow to comment'); ?></h3>
-        <?php endif; ?> <!-- 判断是否允许评论 -->
     </div>
     <div class="mdui-row comFiled">
         <div class="mdui-col-md-8">
