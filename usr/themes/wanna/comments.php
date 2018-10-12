@@ -40,7 +40,6 @@ if(is_array($_GET)&&count($_GET)>0)
 </script>
 <div class="sibi borR5px shadow-2 mdui-typo">
     <?php $this->comments()->to($comments); ?>
-    <?php if($this->allow('comment')): ?>
     <div class="pageHead" id="<?php $this->respondId(); ?>">
         <h4><?php $this->commentsNum(_t('No commennt yet'), _t('Only one comment'), _t('There are %d comments')); ?></h4>
         <div class="mdui-divider" style="margin: 15px 0"></div>
@@ -50,8 +49,8 @@ if(is_array($_GET)&&count($_GET)>0)
         <?php if($this->allow('comment')): ?>
             <form method="post" action="<?php $this->commentUrl() ?>" style="width: 100%" role="form" id="comment_form">
         <?php else: ?>
-            <form style="width: 100%">
-        <?php endif; ?>
+            <form style="width: 100%" role="form" id="comment_form">
+        <?php endif; ?> <!-- 判断是否允许评论 -->
             <div class="replyId" id="replyId" style="float: left">To: <span class="reply-name"><?php echo $this->author->name();?></span><span class="replyCon" style="background-color: rgb(235, 235, 235)"></span></div>
                 <?php if($this->user->hasLogin()): ?>
                     <div style="float: right"><?php _e('From: '); ?><?php $this->user->screenName(); ?>. &nbsp<a style="display: initial" href="<?php $this->options->logoutUrl(); ?>" title="Sign out"><?php _e('Sign out'); ?> &raquo; </a></div>
@@ -77,7 +76,7 @@ if(is_array($_GET)&&count($_GET)>0)
                     <button class="mdui-ripple" type="submit">Submit</button>
                 <?php else: ?>
                     <h3><?php _e('Author do not allow to comment'); ?></h3>
-                <?php endif; ?>
+                <?php endif; ?> <!-- 判断是否允许评论 -->
                 </div>
             </form>
         </div>
