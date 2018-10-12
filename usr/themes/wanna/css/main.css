@@ -671,6 +671,7 @@ header {
 }
 #subBtn {
     padding: 0;
+    width: 100%;
 }
 #subBtn > button {
     width: 100%;
