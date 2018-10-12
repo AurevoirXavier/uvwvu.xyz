@@ -75,7 +75,7 @@ if(is_array($_GET)&&count($_GET)>0)
                 <?php if($this->allow('comment')): ?>
                     <button class="mdui-ripple" type="submit">Submit</button>
                 <?php else: ?>
-                    <button class="mdui-ripple" type="submit">Author do not allow to comment</button>
+                    <button class="mdui-ripple" disabled="disabled">Author do not allow to comment</button>
                 <?php endif; ?>
                 </div>
             </form>
