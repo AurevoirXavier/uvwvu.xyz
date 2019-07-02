@@ -1,5 +1,5 @@
-/* PrismJS 1.14.0
-http://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+c+cpp+haskell+java+json+sql+python+rust+scala+swift&plugins=line-numbers */
+/* PrismJS 1.16.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript&plugins=line-numbers */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -12,6 +12,7 @@ pre[class*="language-"] {
 	background: none;
 	text-shadow: 0 1px white;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -139,15 +140,15 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
-pre.line-numbers {
+pre[class*="language-"].line-numbers {
 	position: relative;
 	padding-left: 3.8em;
 	counter-reset: linenumber;
 }
 
-pre.line-numbers > code {
+pre[class*="language-"].line-numbers > code {
 	position: relative;
-    white-space: inherit;
+	white-space: inherit;
 }
 
 .line-numbers .line-numbers-rows {
@@ -180,3 +181,4 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
+
